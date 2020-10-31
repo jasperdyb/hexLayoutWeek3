@@ -1,0 +1,22 @@
+$directions: (
+  "t": "top",
+  "b": "bottom",
+  "l": "left",
+  "r": "right",
+);
+$dimensions: (
+  "p": "padding",
+  "m": "margin",
+);
+//獲取padding margin間隔
+@each $dim in $dimensions {
+  //迴圈四個方向
+  @each$dir in $directions {
+    @for$i from 1 through 5 {
+      $size: $i * 5;
+      .#{nth($dim,1)}#{nth($dir,1)}-#{$size} {
+        #{nth($dim,2)}-#{nth($dir,2)}: #{$size}px !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500;1,700;1,900&display=swap");
+
+.roboto {
+  &-black {
+    font-family: "Roboto";
+    font-weight: 900;
+  }
+
+  &-bold {
+    font-family: "Roboto";
+    font-weight: 700;
+  }
+
+  &-medium {
+    font-family: "Roboto";
+    font-weight: 500;
+  }
+}
