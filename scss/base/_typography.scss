@@ -28,6 +28,10 @@
   }
 }
 
+.italic {
+  font-style: italic;
+}
+
 .mainTitle {
   font-size: 64px;
   line-height: 1.5;
@@ -79,10 +83,14 @@
 
   .title {
     font-size: 32px;
+
+    &--modify {
+      font-size: 28px;
+    }
   }
 
   .subTitle {
-    font-style: 20px;
+    font-size: 20px;
   }
 }
 
