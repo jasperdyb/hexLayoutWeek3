@@ -5,6 +5,7 @@ $srcImgPath: "../../src/img";
   box-sizing: border-box;
   height: 840px;
   padding-top: 350px;
+  margin-bottom: 64px;
   color: $secondary-color;
 
   &__container {
@@ -19,6 +20,7 @@ $srcImgPath: "../../src/img";
   .cover {
     background-image: url(#{$srcImgPath}/banner-sm.png);
     padding-top: 372px;
+    margin-bottom: 40px;
 
     &__container {
       margin-left: (297px/768px) * 100%;
@@ -36,6 +38,7 @@ $srcImgPath: "../../src/img";
     background-position: center center;
     height: 394px;
     padding-top: 164px;
+    margin-bottom: 32px;
 
     &__container {
       margin-left: (72px/375px) * 100%;
