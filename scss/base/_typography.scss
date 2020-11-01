@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap");
 
 .roboto {
   &Medium {
@@ -18,18 +18,19 @@
 
 .notoSans {
   &Regular {
-    font-family: "Noto Sans", sans-serif;
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 400;
   }
 
   &Bold {
-    font-family: "Noto Sans", sans-serif;
+    font-family: "Noto Sans TC", sans-serif;
     font-weight: 700;
   }
 }
 
-.main-title {
-  font-size: 80px;
-  line-height: 94px;
+.mainTitle {
+  font-size: 64px;
+  line-height: 1.5;
 }
 
 .title {
@@ -37,9 +38,9 @@
   line-height: 75px;
 }
 
-.sub-title {
-  font-size: 24px;
-  line-height: 42px;
+.subTitle {
+  font-size: 36px;
+  line-height: 1.5;
 }
 
 .description {
@@ -48,5 +49,27 @@
   &:lang(zh-TW) {
     font-size: 20px;
     line-height: 1.5;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mainTitle {
+    font-size: 48px;
+  }
+
+  .subTitle {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .mainTitle {
+    font-size: 32px;
+    line-height: 72px;
+  }
+
+  .subTitle {
+    font-size: 16px;
+    line-height: 30px;
   }
 }

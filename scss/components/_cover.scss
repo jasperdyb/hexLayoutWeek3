@@ -1,0 +1,48 @@
+$srcImgPath: "../../src/img";
+
+.cover {
+  background-image: url(#{$srcImgPath}/banner.png);
+  box-sizing: border-box;
+  height: 840px;
+  padding-top: 350px;
+  color: $secondary-color;
+
+  &__container {
+    margin-left: (939px/1920px) * 100%;
+  }
+
+  &__subTitle {
+    margin-left: 1002px-939px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .cover {
+    background-image: url(#{$srcImgPath}/banner-sm.png);
+    padding-top: 372px;
+
+    &__container {
+      margin-left: (297px/768px) * 100%;
+    }
+
+    &__subTitle {
+      margin-left: 437px-297px;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .cover {
+    background-size: cover;
+    background-position: center center;
+    height: 394px;
+    padding-top: 164px;
+
+    &__container {
+      margin-left: (72px/375px) * 100%;
+    }
+
+    &__subTitle {
+      margin-left: 126px-72px;
+    }
+  }
+}
