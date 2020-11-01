@@ -371,3 +371,34 @@ table {
 .navList__item:last-child {
   margin-right: 0;
 }
+
+@media screen and (max-width: 375px) {
+  .navbar {
+    padding: 0;
+  }
+  .navbar__container {
+    width: 100%;
+    display: block;
+  }
+
+  .logo {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px 0;
+  }
+
+  .navList {
+    flex-wrap: wrap;
+  }
+  .navList__item {
+    box-sizing: border-box;
+    border: 1px solid #ffffff;
+    width: 50%;
+    margin: 0;
+  }
+  .navList__item a {
+    width: 100%;
+    text-align: center;
+    line-height: 44px;
+  }
+}

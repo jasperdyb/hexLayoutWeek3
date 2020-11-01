@@ -31,3 +31,35 @@
     }
   }
 }
+
+@media screen and (max-width: 375px) {
+  .navbar {
+    padding: 0;
+    &__container {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  .logo {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px 0;
+  }
+
+  .navList {
+    flex-wrap: wrap;
+
+    &__item {
+      box-sizing: border-box;
+      border: 1px solid #ffffff;
+      width: 50%;
+      margin: 0;
+      a {
+        width: 100%;
+        text-align: center;
+        line-height: 44px;
+      }
+    }
+  }
+}
