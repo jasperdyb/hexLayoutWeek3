@@ -324,22 +324,38 @@ table {
   line-height: 1.5;
 }
 
-.title {
-  font-size: 64px;
-  line-height: 75px;
-}
-
-.subTitle {
+.subMainTitle {
   font-size: 36px;
   line-height: 1.5;
 }
 
-.description {
+.title {
+  font-size: 48px;
+  line-height: 1.5;
+}
+
+.subTitle {
   font-size: 24px;
   line-height: 1.5;
 }
-.description:lang(zh-TW) {
+
+.description {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.headerFontSize {
   font-size: 20px;
+  line-height: 1.5;
+}
+
+.footerFontSize {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.coBrandTitle {
+  font-size: 72px;
   line-height: 1.5;
 }
 
@@ -348,8 +364,16 @@ table {
     font-size: 48px;
   }
 
-  .subTitle {
+  .subMainTitle {
     font-size: 20px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .subTitle {
+    font-style: 20px;
   }
 }
 @media screen and (max-width: 375px) {
@@ -358,9 +382,14 @@ table {
     line-height: 72px;
   }
 
-  .subTitle {
+  .subMainTitle {
     font-size: 16px;
     line-height: 30px;
+  }
+
+  .title {
+    font-size: 24px;
+    line-height: 48px;
   }
 }
 .navbar {
@@ -461,5 +490,85 @@ table {
   }
   .cover__subTitle {
     margin-left: 54px;
+  }
+}
+.intro {
+  color: #650300;
+}
+.intro__container {
+  width: 55.4166666667%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 64px;
+}
+.intro__title {
+  margin-bottom: 60px;
+}
+.intro__list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+.intro__list__item {
+  width: 20%;
+}
+.intro__list__item--order {
+  order: 0;
+}
+.intro__list__item .description {
+  text-align: left;
+  color: black;
+}
+.intro__icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 40px;
+}
+.intro__subTitle {
+  margin-bottom: 4px;
+}
+
+@media screen and (max-width: 768px) {
+  .intro__container {
+    width: 77.8645833333%;
+    padding-top: 40px;
+  }
+  .intro__title {
+    margin-bottom: 32px;
+  }
+  .intro__list {
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+  }
+  .intro__list__item {
+    width: 40%;
+    padding-bottom: 40px;
+  }
+  .intro__list__item--order {
+    order: 1;
+  }
+  .intro__icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 16px;
+  }
+  .intro__subTitle {
+    margin-bottom: 8px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .intro__container {
+    width: 70.4%;
+    padding-top: 32px;
+  }
+  .intro__title {
+    margin-bottom: 20px;
+  }
+  .intro__list {
+    flex-direction: column;
+    margin-bottom: 12px;
+  }
+  .intro__list__item {
+    width: 100%;
   }
 }

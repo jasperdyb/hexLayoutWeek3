@@ -1,0 +1,100 @@
+.intro {
+  color: $secondary-color;
+  &__container {
+    width: ((1920px-428px * 2) /1920px) * 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 64px;
+  }
+
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+
+    &__item {
+      width: 20%;
+
+      &--order {
+        order: 0;
+      }
+
+      .description {
+        text-align: left;
+        color: black;
+      }
+    }
+  }
+
+  &__icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 40px;
+  }
+
+  &__subTitle {
+    margin-bottom: 4px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .intro {
+    &__container {
+      width: ((768px-85px * 2) /768px) * 100%;
+      padding-top: 40px;
+    }
+
+    &__title {
+      margin-bottom: 32px;
+    }
+
+    &__list {
+      flex-wrap: wrap;
+      padding-bottom: 40px;
+      &__item {
+        width: 40%;
+        padding-bottom: 40px;
+
+        &--order {
+          order: 1;
+        }
+      }
+    }
+
+    &__icon {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 16px;
+    }
+
+    &__subTitle {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .intro {
+    &__container {
+      width: (264px /375px) * 100%;
+      padding-top: 32px;
+    }
+
+    &__title {
+      margin-bottom: 20px;
+    }
+
+    &__list {
+      flex-direction: column;
+      margin-bottom: 12px;
+
+      &__item {
+        width: 100%;
+      }
+    }
+  }
+}
