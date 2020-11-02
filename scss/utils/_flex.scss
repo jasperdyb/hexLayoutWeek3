@@ -1,6 +1,16 @@
-.d {
+@import "../base/media";
+
+@mixin display {
   &-flex {
     display: flex;
+  }
+
+  &-inline-block {
+    display: inline-block;
+  }
+
+  &-block {
+    display: block;
   }
 }
 
@@ -30,25 +40,6 @@
   }
 }
 
-.flex {
-  @include flex-direction;
-  @include flex-wrap;
-
-  @media screen and (max-width: 768px) {
-    &-m {
-      @include flex-direction;
-      @include flex-wrap;
-    }
-  }
-
-  @media screen and (max-width: 375px) {
-    &-s {
-      @include flex-direction;
-      @include flex-wrap;
-    }
-  }
-}
-
 @mixin justify {
   &-start {
     justify-content: start;
@@ -67,23 +58,7 @@
   }
 }
 
-.justify {
-  @include justify;
-
-  @media screen and (max-width: 768px) {
-    &-m {
-      @include justify;
-    }
-  }
-
-  @media screen and (max-width: 375px) {
-    &-s {
-      @include justify;
-    }
-  }
-}
-
-.align-items {
+@mixin align-items {
   &-start {
     align-items: start;
   }
@@ -98,5 +73,55 @@
 
   &-between {
     align-items: space-between;
+  }
+}
+
+.d {
+  @include display;
+
+  @each $tag, $breakpoint in $breakpoints {
+    @include media-query($breakpoint) {
+      &-#{$tag} {
+        @include display;
+      }
+    }
+  }
+}
+
+.flex {
+  @include flex-direction;
+  @include flex-wrap;
+
+  @each $tag, $breakpoint in $breakpoints {
+    @include media-query($breakpoint) {
+      &-#{$tag} {
+        @include flex-direction;
+        @include flex-wrap;
+      }
+    }
+  }
+}
+
+.justify {
+  @include justify;
+
+  @each $tag, $breakpoint in $breakpoints {
+    @include media-query($breakpoint) {
+      &-#{$tag} {
+        @include justify;
+      }
+    }
+  }
+}
+
+.align-items {
+  @include align-items;
+
+  @each $tag, $breakpoint in $breakpoints {
+    @include media-query($breakpoint) {
+      &-#{$tag} {
+        @include align-items;
+      }
+    }
   }
 }

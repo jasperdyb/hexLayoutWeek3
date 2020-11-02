@@ -1,4 +1,5 @@
 @import "../themes/theme";
+@import "../base/media";
 
 @mixin txt {
   &-primary {
@@ -21,15 +22,11 @@
 .txt {
   @include txt;
 
-  @media screen and (max-width: 768px) {
-    &-m {
-      @include txt;
-    }
-  }
-
-  @media screen and (max-width: 375px) {
-    &-s {
-      @include txt;
+  @each $tag, $breakpoint in $breakpoints {
+    @include media-query($breakpoint) {
+      &-#{$tag} {
+        @include txt;
+      }
     }
   }
 }

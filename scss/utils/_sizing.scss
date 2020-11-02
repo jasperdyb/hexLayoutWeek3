@@ -1,3 +1,5 @@
+@import "../base/media";
+
 $sizes: (25, 25%), (50, 50%), (75, 75%), (100, 100%);
 
 @each $size, $length in $sizes {
@@ -7,5 +9,19 @@ $sizes: (25, 25%), (50, 50%), (75, 75%), (100, 100%);
 
   .h-#{$size} {
     height: $length;
+  }
+}
+
+@each $tag, $breakpoint in $breakpoints {
+  @include media-query($breakpoint) {
+    @each $size, $length in $sizes {
+      .w-#{$tag}-#{$size} {
+        width: $length;
+      }
+
+      .h-#{$tag}-#{$size} {
+        height: $length;
+      }
+    }
   }
 }

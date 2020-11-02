@@ -1,5 +1,9 @@
+@use "sass:map";
+
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap");
+
+@import "../base/media";
 
 .roboto {
   font-family: "Roboto", sans-serif;
@@ -18,7 +22,7 @@ $font-sizes: 14, 16, 20, 24, 48, 36, 64, 72;
   }
 }
 
-@media screen and (max-width: 768px) {
+@include media-query(map.get($breakpoints, m)) {
   $m-font-sizes: 14, 16, 20, 24, 28, 32, 36, 48;
   $m-line-hight: 25;
 
@@ -36,7 +40,7 @@ $font-sizes: 14, 16, 20, 24, 48, 36, 64, 72;
   }
 }
 
-@media screen and (max-width: 375px) {
+@include media-query(map.get($breakpoints, s)) {
   $s-font-sizes: 14, 16, 20, 24, 28, 32;
   $s-line-hight: 25, 30, 48, 72;
   @each $fz in $s-font-sizes {
