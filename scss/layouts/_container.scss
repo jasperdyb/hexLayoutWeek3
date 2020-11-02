@@ -6,6 +6,11 @@
     max-width: (1920px - 428.5px * 2);
     margin: 0 auto;
   }
+
+  &--form {
+    max-width: (1920px - 595px * 2);
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -15,12 +20,20 @@
     &--modify {
       max-width: (768px - 85.5px * 2);
     }
+
+    &--form {
+      max-width: 450px;
+      margin: 0 auto;
+    }
   }
 }
 
 @media screen and (max-width: 375px) {
   .container {
-    max-width: (375px - 15px * 2);
+    &,
+    &--form {
+      max-width: (375px - 15px * 2);
+    }
 
     &--modify {
       max-width: (375px - 69px * 2);

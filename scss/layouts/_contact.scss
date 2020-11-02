@@ -1,0 +1,51 @@
+.contact {
+  margin-bottom: 80px;
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  &__subtitle {
+    margin-bottom: 20px;
+  }
+
+  &__privacy {
+    margin-bottom: 42px;
+  }
+
+  &__button {
+    width: 350px;
+    padding: 16px 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    margin-bottom: 40px;
+    &__title {
+      margin-bottom: 16px;
+    }
+
+    &__subtitle {
+      margin-bottom: 12px;
+    }
+
+    &__privacy {
+      margin-bottom: 20px;
+    }
+
+    &__button {
+      width: 210px;
+      padding: 8px 0;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    &__button {
+      width: 165px;
+    }
+  }
+}

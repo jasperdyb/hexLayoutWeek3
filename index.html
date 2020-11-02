@@ -277,7 +277,64 @@
         </ul>
       </div>
     </div>
-    <div class="contact"></div>
+    <div class="contact container--form notoSans fw-bold">
+      <h2 class="contact__title fz-48 fz-48 fz-m-32 fz-s-20 lh-s-48 txt-center">
+        聯絡我們
+      </h2>
+      <h3 class="contact__subtitle fz-20 fz-m-16 notoSans fw-regular">
+        我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。
+      </h3>
+      <form action="#" class="contact__form fz-16 fz-m-14 notoSans fw-regular">
+        <div class="form-group">
+          <label for="contactName ">姓名</label>
+          <input
+            type="text"
+            class="form-control"
+            id="contactName"
+            placeholder="陳小明"
+          />
+        </div>
+        <div class="form-group">
+          <label for="contactPhone">聯絡電話</label>
+          <input
+            type="tel"
+            class="form-control"
+            id="contactPhone"
+            placeholder="0912-345-678"
+          />
+        </div>
+        <div class="form-group">
+          <label for="contactEmail">電子郵件</label>
+          <input
+            type="email"
+            class="form-control"
+            id="contactEmail"
+            placeholder="example@email.com"
+          />
+        </div>
+        <div class="form-group">
+          <label for="contactOpinion">意見反應</label>
+          <textarea
+            id="contactOpinion"
+            class="form-control"
+            placeholder="請輸入您的意見"
+            rows="4"
+          ></textarea>
+        </div>
+        <div class="form-check contact__privacy">
+          <input type="checkbox" id="contactPrivacy" class="form-check-input" />
+          <label for="contactPrivacy" class="form-check-label"
+            >我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label
+          >
+        </div>
+        <button
+          type="submit"
+          class="contact__button bg-primary txt-primary-contrast"
+        >
+          確認送出
+        </button>
+      </form>
+    </div>
     <div class="footer"></div>
   </body>
 </html>

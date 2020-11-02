@@ -442,12 +442,128 @@ a:link {
     line-height: 72px;
   }
 }
+/* ----------------------------------------------------------------------------------------------------
+Super Form Reset
+A couple of things to watch out for:
+- IE8: If a text input doesn't have padding on all sides or none the text won't be centered.
+- The default border sizes on text inputs in all UAs seem to be slightly different. You're better off using custom borders.
+- You NEED to set the font-size and family on all form elements
+- Search inputs need to have their appearance reset and the box-sizing set to content-box to match other UAs
+- You can style the upload button in webkit using ::-webkit-file-upload-button
+- ::-webkit-file-upload-button selectors can't be used in the same selector as normal ones. FF and IE freak out.
+- IE: You don't need to fake inline-block with labels and form controls in IE. They function as inline-block.
+- By turning off ::-webkit-search-decoration, it removes the extra whitespace on the left on search inputs
+----------------------------------------------------------------------------------------------------*/
+input,
+label,
+select,
+button,
+textarea {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  font-family: inherit;
+}
+
+/* Remove the stupid outer glow in Webkit */
+input:focus {
+  outline: 0;
+}
+
+/* Box Sizing Reset
+-----------------------------------------------*/
+/* All of our custom controls should be what we expect them to be */
+input,
+textarea {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* These elements are usually rendered a certain way by the browser */
+button,
+input[type=reset],
+input[type=button],
+input[type=submit],
+input[type=checkbox],
+input[type=radio],
+select {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Text Inputs
+-----------------------------------------------*/
+/* Button Controls
+-----------------------------------------------*/
+/* File Uploads
+-----------------------------------------------*/
+/* Search Input
+-----------------------------------------------*/
+/* Make webkit render the search input like a normal text field */
+input[type=search] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+}
+
+/* Turn off the recent search for webkit. It adds about 15px padding on the left */
+::-webkit-search-decoration {
+  display: none;
+}
+
+/* Buttons
+-----------------------------------------------*/
+button,
+input[type=reset],
+input[type=button],
+input[type=submit] {
+  /* Fix IE7 display bug */
+  overflow: visible;
+  width: auto;
+}
+
+button {
+  display: block;
+}
+
+/* IE8 and FF freak out if this rule is within another selector */
+::-webkit-file-upload-button {
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
+/* Textarea
+-----------------------------------------------*/
+textarea {
+  /* Move the label to the top */
+  vertical-align: top;
+  /* Turn off scroll bars in IE unless needed */
+  overflow: auto;
+}
+
+/* Selects
+-----------------------------------------------*/
+select[multiple] {
+  /* Move the label to the top */
+  vertical-align: top;
+}
+
 .container {
   max-width: 1110px;
   margin: 0 auto;
 }
 .container--modify {
   max-width: 1063px;
+  margin: 0 auto;
+}
+.container--form {
+  max-width: 730px;
   margin: 0 auto;
 }
 
@@ -458,9 +574,13 @@ a:link {
   .container--modify {
     max-width: 597px;
   }
+  .container--form {
+    max-width: 450px;
+    margin: 0 auto;
+  }
 }
 @media screen and (max-width: 375px) {
-  .container {
+  .container, .container--form {
     max-width: 345px;
   }
   .container--modify {
@@ -803,6 +923,92 @@ a:link {
   }
   .opinion .customer:last-child {
     margin-bottom: 0;
+  }
+}
+.contact {
+  margin-bottom: 80px;
+}
+.contact__title {
+  margin-bottom: 24px;
+}
+.contact__subtitle {
+  margin-bottom: 20px;
+}
+.contact__privacy {
+  margin-bottom: 42px;
+}
+.contact__button {
+  width: 350px;
+  padding: 16px 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    margin-bottom: 40px;
+  }
+  .contact__title {
+    margin-bottom: 16px;
+  }
+  .contact__subtitle {
+    margin-bottom: 12px;
+  }
+  .contact__privacy {
+    margin-bottom: 20px;
+  }
+  .contact__button {
+    width: 210px;
+    padding: 8px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact__button {
+    width: 165px;
+  }
+}
+.form-group {
+  margin-bottom: 16px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 4px;
+}
+.form-control {
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 14px 16px;
+  resize: none;
+}
+.form-check {
+  display: flex;
+  align-items: center;
+}
+.form-check-input {
+  width: 24px;
+  height: 24px;
+  margin-right: 4px;
+}
+
+@media screen and (max-width: 768px) {
+  .form-group {
+    margin-bottom: 8px;
+  }
+  .form-group label {
+    margin-bottom: 2px;
+  }
+  .form-control {
+    padding: 18px 12px;
+    resize: none;
+  }
+  .form-check {
+    align-items: flex-start;
+  }
+  .form-check-input {
+    width: 18px;
+    height: 18px;
   }
 }
 .txt-left {
