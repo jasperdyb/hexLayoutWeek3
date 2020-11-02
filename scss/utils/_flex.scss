@@ -60,11 +60,11 @@
 
 @mixin align-items {
   &-start {
-    align-items: start;
+    align-items: flex-start;
   }
 
   &-end {
-    align-items: end;
+    align-items: flex-end;
   }
 
   &-center {
@@ -73,6 +73,12 @@
 
   &-between {
     align-items: space-between;
+  }
+}
+
+@mixin flex-fill {
+  &-fill {
+    flex: 1;
   }
 }
 
@@ -91,12 +97,13 @@
 .flex {
   @include flex-direction;
   @include flex-wrap;
-
+  @include flex-fill;
   @each $tag, $breakpoint in $breakpoints {
     @include media-query($breakpoint) {
       &-#{$tag} {
         @include flex-direction;
         @include flex-wrap;
+        @include flex-fill;
       }
     }
   }

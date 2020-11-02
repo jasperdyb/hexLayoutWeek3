@@ -1,0 +1,166 @@
+.footer {
+  &__top {
+    border-bottom: 1px solid #ffffff;
+  }
+
+  &__left {
+    padding-top: 48px;
+  }
+
+  &__nav {
+    li {
+      margin-right: 48px;
+    }
+
+    margin-bottom: 32px;
+  }
+
+  &__contact {
+    li {
+      margin-bottom: 20px;
+    }
+
+    &__icon {
+      margin-right: 17px;
+    }
+  }
+
+  &__right {
+    padding-top: 36px;
+  }
+
+  &__social {
+    &__icon {
+      margin-left: 32px;
+    }
+  }
+
+  &__bottom {
+    padding-top: 24px;
+    padding-bottom: 28px;
+  }
+
+  &__logo {
+    margin-right: 38px;
+  }
+
+  &__policy {
+    &__list {
+      li {
+        margin-left: 62px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    &__left {
+      padding-top: 40px;
+    }
+
+    &__nav {
+      li {
+        margin-right: 40px;
+      }
+
+      margin-bottom: 24px;
+    }
+
+    &__contact {
+      li {
+        margin-bottom: 8px;
+
+        &:last-child {
+          margin-bottom: 24px;
+        }
+      }
+
+      &__icon {
+        margin-right: 8px;
+        width: 32;
+        height: 32px;
+      }
+    }
+
+    &__right {
+      padding-top: 36px;
+    }
+
+    &__social {
+      &__icon {
+        margin-left: 24px;
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    &__bottom {
+      padding-bottom: 40px;
+    }
+
+    &__logo {
+      display: none;
+    }
+
+    &__policy {
+      &__list {
+        li {
+          margin-left: 24px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .footer {
+    &__left {
+      padding-top: 23px;
+    }
+
+    &__nav {
+      display: none !important;
+    }
+
+    &__contact {
+      &__icon {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    &__right {
+      padding-top: 24px;
+    }
+
+    &__bottom {
+      padding-top: 18px;
+      padding-bottom: 21px;
+    }
+
+    &__logo {
+      display: block;
+      margin-right: 0;
+      width: 46px;
+      object-fit: cover;
+    }
+
+    &__copyright {
+      margin-bottom: 7px;
+    }
+
+    &__policy {
+      &__list {
+        li {
+          margin-left: 0;
+          margin-bottom: 8px;
+        }
+
+        &:last-child {
+          margin-bottom: 4px;
+        }
+      }
+    }
+  }
+}
