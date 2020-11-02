@@ -4,7 +4,7 @@
   }
 }
 
-.flex {
+@mixin flex-direction {
   &-row {
     flex-direction: row;
     &-reverse {
@@ -20,7 +20,36 @@
   }
 }
 
-.justify-content {
+@mixin flex-wrap {
+  &-wrap {
+    flex-wrap: wrap;
+  }
+
+  &-no-wrap {
+    flex-wrap: nowrap;
+  }
+}
+
+.flex {
+  @include flex-direction;
+  @include flex-wrap;
+
+  @media screen and (max-width: 768px) {
+    &-m {
+      @include flex-direction;
+      @include flex-wrap;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    &-s {
+      @include flex-direction;
+      @include flex-wrap;
+    }
+  }
+}
+
+.justify {
   &-start {
     justify-content: start;
   }

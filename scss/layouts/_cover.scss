@@ -4,13 +4,12 @@ $srcImgPath: "../../src/img";
   background-image: url(#{$srcImgPath}/banner.png);
   box-sizing: border-box;
   height: 840px;
-  padding-top: 350px;
+
   margin-bottom: 64px;
 }
 @media screen and (max-width: 768px) {
   .cover {
     background-image: url(#{$srcImgPath}/banner-sm.png);
-    padding-top: 372px;
     margin-bottom: 40px;
 
     &__container {
@@ -28,7 +27,6 @@ $srcImgPath: "../../src/img";
     background-size: cover;
     background-position: center center;
     height: 394px;
-    padding-top: 164px;
     margin-bottom: 32px;
 
     &__container {

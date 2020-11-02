@@ -1,20 +1,10 @@
 .navbar {
-  padding: 30px 0;
-
-  &__container {
-    width: ((1920px - (88px * 2))/1920px) * 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-  }
+  padding: 30px 88px;
 }
 
 .navList {
-  display: flex;
-
   &__item {
-    display: flex;
-    align-items: center;
+    height: fit-content;
     margin: 0 32px;
 
     &:first-child {
@@ -27,6 +17,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .navbar {
+    padding: 30px 39px;
+  }
+
   .navList {
     &__item {
       margin: 0 10px;
@@ -37,10 +31,6 @@
 @media screen and (max-width: 375px) {
   .navbar {
     padding: 0;
-    &__container {
-      width: 100%;
-      display: block;
-    }
   }
 
   .logo {
@@ -50,17 +40,12 @@
   }
 
   .navList {
-    flex-wrap: wrap;
-
     &__item {
       box-sizing: border-box;
       border: 1px solid #ffffff;
       width: 50%;
       margin: 0;
-      a {
-        width: 100%;
-        line-height: 44px;
-      }
+      padding: 8px 0;
     }
   }
 }

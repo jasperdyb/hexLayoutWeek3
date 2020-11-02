@@ -7,32 +7,29 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <div class="navbar bg-primary">
-      <div class="navbar__container">
-        <div class="logo">
-          <a href="/"><img src="./src/img/logo.png" alt="logo" /></a>
-        </div>
-        <ul
-          class="navList fz-20 notoSans fw-regular txt-center txt-primary-contrast"
-          lang="zh-TW"
-        >
-          <li class="navList__item">
-            <a href="products.html">系列鏡框</a>
-          </li>
-          <li class="navList__item">
-            <a href="location.html">門市據點</a>
-          </li>
-          <li class="navList__item">
-            <a href="blog.html">部落格</a>
-          </li>
-          <li class="navList__item">
-            <a href="faq.html">常見問題</a>
-          </li>
-        </ul>
+    <div class="navbar bg-primary d-flex flex-s-column justify-between">
+      <div class="logo">
+        <a href="/"><img src="./src/img/logo.png" alt="logo" /></a>
       </div>
+      <ul
+        class="navList fz-20 notoSans fw-regular txt-center txt-primary-contrast d-flex flex-s-wrap align-items-center"
+      >
+        <li class="navList__item">
+          <a href="products.html">系列鏡框</a>
+        </li>
+        <li class="navList__item">
+          <a href="location.html">門市據點</a>
+        </li>
+        <li class="navList__item">
+          <a href="blog.html">部落格</a>
+        </li>
+        <li class="navList__item">
+          <a href="faq.html">常見問題</a>
+        </li>
+      </ul>
     </div>
     <div class="cover txt-secondary txt-right">
-      <div class="container">
+      <div class="container d-flex flex-column justify-center h-100">
         <h3
           class="cover__subTitle fz-36 fz-m-20 fz-s-16 lh-s-30 notoSans fw-regular"
         >
@@ -44,71 +41,61 @@
       </div>
     </div>
     <div class="intro txt-center">
-      <div class="container--modify">
-        <h2
-          class="intro__title fz-48 fz-m-32 fz-s-24 lh-s-48fz-m-32 fz-s-24 lh-s-48 notoSans fw-bold"
-        >
-          用專業的心，做專業的事
-        </h2>
-        <ul class="intro__list">
-          <li class="intro__list__item intro__list__item--order">
-            <img
-              src="./src/icon//icon-dollar.svg"
-              alt="dollar"
-              class="intro__icon"
-            />
-            <h3 class="fz-24 fz-m-20 notoSans fw-bold">單一價格</h3>
-            <p
-              class="fz-16 notoSans fw-regular txt-left txt-secondary-contrast"
-            >
-              無論任何度數皆不需追加費用 即可擁有適合自己的薄型球面 鏡片。
-            </p>
-          </li>
-          <li class="intro__list__item">
-            <img
-              src="./src/icon/icon-clock.svg"
-              alt="clock"
-              class="intro__icon"
-            />
-            <h3 class="intro__subTitle fz-24 fz-m-20 notoSans fw-bold">
-              20 分鐘即可取件
-            </h3>
-            <p
-              class="fz-16 notoSans fw-regular txt-left txt-secondary-contrast"
-            >
-              為了您的寶貴時間著想，以豐 富專業知識與技術將結帳到交
-              件的時間縮減至最快 20 分鐘 即可完成。
-            </p>
-          </li>
-          <li class="intro__list__item">
-            <img
-              src="./src/icon/icon-heart.svg"
-              alt="heart"
-              class="intro__icon"
-            />
-            <h3 class="fz-24 fz-m-20 notoSans fw-bold">安心售後服務</h3>
-            <p
-              class="fz-16 notoSans fw-regular txt-left txt-secondary-contrast"
-            >
-              我們提供長達 120
-              天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。
-            </p>
-          </li>
-          <li class="intro__list__item intro__list__item--order">
-            <img
-              src="./src/icon//icon-glasses.svg"
-              alt="glasses"
-              class="intro__icon"
-            />
-            <h3 class="fz-24 fz-m-20 notoSans fw-bold">關於鏡片</h3>
-            <p
-              class="fz-16 notoSans fw-regular txt-left txt-secondary-contrast"
-            >
-              使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。
-            </p>
-          </li>
-        </ul>
-      </div>
+      <h2
+        class="intro__title fz-48 fz-m-32 fz-s-24 lh-s-48fz-m-32 fz-s-24 lh-s-48 notoSans fw-bold"
+      >
+        用專業的心，做專業的事
+      </h2>
+      <ul class="intro__list container--modify">
+        <li class="intro__list__item intro__list__item--order">
+          <img
+            src="./src/icon//icon-dollar.svg"
+            alt="dollar"
+            class="intro__icon"
+          />
+          <h3 class="fz-24 fz-m-20 notoSans fw-bold">單一價格</h3>
+          <p class="fz-16 notoSans fw-regular txt-left txt-secondary-contrast">
+            無論任何度數皆不需追加費用 即可擁有適合自己的薄型球面 鏡片。
+          </p>
+        </li>
+        <li class="intro__list__item">
+          <img
+            src="./src/icon/icon-clock.svg"
+            alt="clock"
+            class="intro__icon"
+          />
+          <h3 class="intro__subTitle fz-24 fz-m-20 notoSans fw-bold">
+            20 分鐘即可取件
+          </h3>
+          <p class="fz-16 notoSans fw-regular txt-left txt-secondary-contrast">
+            為了您的寶貴時間著想，以豐 富專業知識與技術將結帳到交
+            件的時間縮減至最快 20 分鐘 即可完成。
+          </p>
+        </li>
+        <li class="intro__list__item">
+          <img
+            src="./src/icon/icon-heart.svg"
+            alt="heart"
+            class="intro__icon"
+          />
+          <h3 class="fz-24 fz-m-20 notoSans fw-bold">安心售後服務</h3>
+          <p class="fz-16 notoSans fw-regular txt-left txt-secondary-contrast">
+            我們提供長達 120
+            天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。
+          </p>
+        </li>
+        <li class="intro__list__item intro__list__item--order">
+          <img
+            src="./src/icon//icon-glasses.svg"
+            alt="glasses"
+            class="intro__icon"
+          />
+          <h3 class="fz-24 fz-m-20 notoSans fw-bold">關於鏡片</h3>
+          <p class="fz-16 notoSans fw-regular txt-left txt-secondary-contrast">
+            使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。
+          </p>
+        </li>
+      </ul>
     </div>
     <div class="product">
       <div class="container">
