@@ -297,106 +297,161 @@ table {
   margin-right: 25px !important;
 }
 
-.robotoMedium {
-  font-family: "Roboto";
-  font-weight: 500;
-}
-.robotoBold {
-  font-family: "Roboto";
-  font-weight: 700;
-}
-.robotoBlack {
-  font-family: "Roboto";
-  font-weight: 900;
+.roboto {
+  font-family: "Roboto", sans-serif;
 }
 
-.notoSansRegular {
+.notoSans {
   font-family: "Noto Sans TC", sans-serif;
-  font-weight: 400;
-}
-.notoSansBold {
-  font-family: "Noto Sans TC", sans-serif;
-  font-weight: 700;
 }
 
-.italic {
+.txt-italic {
   font-style: italic;
 }
 
-.mainTitle {
-  font-size: 64px;
-  line-height: 1.5;
+.fw-regular {
+  font-weight: 400;
+}
+.fw-medium {
+  font-weight: 500;
+}
+.fw-bold {
+  font-weight: 700;
+}
+.fw-black {
+  font-weight: 900;
 }
 
-.subMainTitle {
-  font-size: 36px;
-  line-height: 1.5;
-}
-
-.title {
-  font-size: 48px;
-  line-height: 1.5;
-}
-
-.subTitle {
-  font-size: 24px;
-  line-height: 1.5;
-}
-
-.description {
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.headerFontSize {
-  font-size: 20px;
-  line-height: 1.5;
-}
-
-.footerFontSize {
+.fz-14 {
   font-size: 14px;
   line-height: 1.5;
 }
 
-.coBrandTitle {
+.fz-16 {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.fz-20 {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.fz-24 {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.fz-48 {
+  font-size: 48px;
+  line-height: 1.5;
+}
+
+.fz-36 {
+  font-size: 36px;
+  line-height: 1.5;
+}
+
+.fz-64 {
+  font-size: 64px;
+  line-height: 1.5;
+}
+
+.fz-72 {
   font-size: 72px;
   line-height: 1.5;
 }
 
 @media screen and (max-width: 768px) {
-  .mainTitle {
-    font-size: 48px;
+  .fz-m-14 {
+    font-size: 14px;
+    line-height: 1.5;
   }
 
-  .subMainTitle {
+  .fz-m-16 {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .fz-m-20 {
     font-size: 20px;
+    line-height: 1.5;
   }
 
-  .title {
-    font-size: 32px;
+  .fz-m-24 {
+    font-size: 24px;
+    line-height: 1.5;
   }
-  .title--modify {
+
+  .fz-m-28 {
     font-size: 28px;
+    line-height: 1.5;
   }
 
-  .subTitle {
-    font-size: 20px;
+  .fz-m-32 {
+    font-size: 32px;
+    line-height: 1.5;
+  }
+
+  .fz-m-36 {
+    font-size: 36px;
+    line-height: 1.5;
+  }
+
+  .fz-m-48 {
+    font-size: 48px;
+    line-height: 1.5;
+  }
+
+  .lh-m-25 {
+    line-height: 25px;
   }
 }
 @media screen and (max-width: 375px) {
-  .mainTitle {
-    font-size: 32px;
-    line-height: 72px;
+  .fz-s-14 {
+    font-size: 14px;
+    line-height: 1.5;
   }
 
-  .subMainTitle {
+  .fz-s-16 {
     font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .fz-s-20 {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .fz-s-24 {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+
+  .fz-s-28 {
+    font-size: 28px;
+    line-height: 1.5;
+  }
+
+  .fz-s-32 {
+    font-size: 32px;
+    line-height: 1.5;
+  }
+
+  .lh-s-25 {
+    line-height: 25px;
+  }
+
+  .lh-s-30 {
     line-height: 30px;
   }
 
-  .title {
-    font-size: 24px;
+  .lh-s-48 {
     line-height: 48px;
+  }
+
+  .lh-s-72 {
+    line-height: 72px;
   }
 }
 .navbar {

@@ -2,110 +2,77 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap");
 
 .roboto {
-  &Medium {
-    font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
+}
+
+.notoSans {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.txt {
+  &-italic {
+    font-style: italic;
+  }
+}
+
+.fw {
+  &-regular {
+    font-weight: 400;
+  }
+
+  &-medium {
     font-weight: 500;
   }
-  &Bold {
-    font-family: "Roboto";
+
+  &-bold {
     font-weight: 700;
   }
-  &Black {
-    font-family: "Roboto";
+
+  &-black {
     font-weight: 900;
   }
 }
 
-.notoSans {
-  &Regular {
-    font-family: "Noto Sans TC", sans-serif;
-    font-weight: 400;
+$font-sizes: 14, 16, 20, 24, 48, 36, 64, 72;
+
+@each $fz in $font-sizes {
+  .fz-#{$fz} {
+    font-size: #{$fz}px;
+    line-height: 1.5;
   }
-
-  &Bold {
-    font-family: "Noto Sans TC", sans-serif;
-    font-weight: 700;
-  }
-}
-
-.italic {
-  font-style: italic;
-}
-
-.mainTitle {
-  font-size: 64px;
-  line-height: 1.5;
-}
-
-.subMainTitle {
-  font-size: 36px;
-  line-height: 1.5;
-}
-
-.title {
-  font-size: 48px;
-  line-height: 1.5;
-}
-
-.subTitle {
-  font-size: 24px;
-  line-height: 1.5;
-}
-
-.description {
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.headerFontSize {
-  font-size: 20px;
-  line-height: 1.5;
-}
-
-.footerFontSize {
-  font-size: 14px;
-  line-height: 1.5;
-}
-
-.coBrandTitle {
-  font-size: 72px;
-  line-height: 1.5;
 }
 
 @media screen and (max-width: 768px) {
-  .mainTitle {
-    font-size: 48px;
-  }
+  $m-font-sizes: 14, 16, 20, 24, 28, 32, 36, 48;
+  $m-line-hight: 25;
 
-  .subMainTitle {
-    font-size: 20px;
-  }
-
-  .title {
-    font-size: 32px;
-
-    &--modify {
-      font-size: 28px;
+  @each $fz in $m-font-sizes {
+    .fz-m-#{$fz} {
+      font-size: #{$fz}px;
+      line-height: 1.5;
     }
   }
 
-  .subTitle {
-    font-size: 20px;
+  @each $lh in $m-line-hight {
+    .lh-m-#{$lh} {
+      line-height: #{$lh}px;
+    }
   }
 }
 
 @media screen and (max-width: 375px) {
-  .mainTitle {
-    font-size: 32px;
-    line-height: 72px;
+  $s-font-sizes: 14, 16, 20, 24, 28, 32;
+  $s-line-hight: 25, 30, 48, 72;
+  @each $fz in $s-font-sizes {
+    .fz-s-#{$fz} {
+      font-size: #{$fz}px;
+      line-height: 1.5;
+    }
   }
 
-  .subMainTitle {
-    font-size: 16px;
-    line-height: 30px;
-  }
-  .title {
-    font-size: 24px;
-    line-height: 48px;
+  @each $lh in $s-line-hight {
+    .lh-s-#{$lh} {
+      line-height: #{$lh}px;
+    }
   }
 }
