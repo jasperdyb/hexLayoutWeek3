@@ -1,0 +1,77 @@
+@use "sass:map";
+@import "../utils/media";
+
+.opinion {
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__list {
+    margin-bottom: 143px;
+  }
+
+  .customer {
+    width: 255px;
+
+    &__portrait {
+      width: 100%;
+      object-fit: cover;
+      margin-bottom: 14px;
+    }
+    &__name {
+      margin-bottom: 7px;
+    }
+
+    &__opinion {
+      margin-bottom: 10px;
+    }
+
+    &__published {
+    }
+  }
+}
+
+@include media-query(map.get($breakpoints, m)) {
+  $gap-between-rows: 44px;
+  .opinion {
+    &__title {
+      margin-bottom: 32px;
+    }
+
+    &__list {
+      margin-bottom: (-$gap-between-rows + 97px);
+    }
+
+    .customer {
+      width: 330px;
+      margin-bottom: $gap-between-rows;
+
+      &__portrait,
+      &__name,
+      &__opinion {
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
+
+@include media-query(map.get($breakpoints, s)) {
+  .opinion {
+    &__title {
+      margin-bottom: 20px;
+    }
+
+    &__list {
+      margin-bottom: 80px;
+    }
+
+    .customer {
+      width: 100%;
+      margin-bottom: 32px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

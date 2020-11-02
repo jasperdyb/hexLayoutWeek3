@@ -755,6 +755,56 @@ a:link {
     height: 284px;
   }
 }
+.opinion__title {
+  margin-bottom: 60px;
+}
+.opinion__list {
+  margin-bottom: 143px;
+}
+.opinion .customer {
+  width: 255px;
+}
+.opinion .customer__portrait {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 14px;
+}
+.opinion .customer__name {
+  margin-bottom: 7px;
+}
+.opinion .customer__opinion {
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+  .opinion__title {
+    margin-bottom: 32px;
+  }
+  .opinion__list {
+    margin-bottom: 53px;
+  }
+  .opinion .customer {
+    width: 330px;
+    margin-bottom: 44px;
+  }
+  .opinion .customer__portrait, .opinion .customer__name, .opinion .customer__opinion {
+    margin-bottom: 16px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .opinion__title {
+    margin-bottom: 20px;
+  }
+  .opinion__list {
+    margin-bottom: 80px;
+  }
+  .opinion .customer {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+  .opinion .customer:last-child {
+    margin-bottom: 0;
+  }
+}
 .txt-left {
   text-align: left;
 }
@@ -858,6 +908,9 @@ a:link {
 .txt-secondary-contrast {
   color: #000;
 }
+.txt-grey {
+  color: grey;
+}
 @media screen and (max-width: 768px) {
   .txt-m-primary {
     color: #aa0601;
@@ -870,6 +923,9 @@ a:link {
   }
   .txt-m-secondary-contrast {
     color: #000;
+  }
+  .txt-m-grey {
+    color: grey;
   }
 }
 @media screen and (max-width: 375px) {
@@ -884,6 +940,9 @@ a:link {
   }
   .txt-s-secondary-contrast {
     color: #000;
+  }
+  .txt-s-grey {
+    color: grey;
   }
 }
 
