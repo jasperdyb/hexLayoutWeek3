@@ -631,11 +631,9 @@ a:link {
   width: 635px;
   height: 320px;
   object-fit: cover;
-  margin-right: 30px;
 }
-.product__list__cover--reverse {
-  margin: 0;
-  margin-left: 30px;
+.product__list__title {
+  margin: 0 30px;
 }
 .product__list__icon, .product__list__icon--alter {
   height: 50px;
@@ -643,10 +641,6 @@ a:link {
 }
 .product__list__icon--alter {
   display: none;
-}
-.product__list__title {
-  display: flex;
-  align-items: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -662,9 +656,6 @@ a:link {
   .product__list__item {
     margin-bottom: 8px;
   }
-  .product__list__item--reverse {
-    flex-direction: row;
-  }
   .product__list__item:last-child {
     margin-bottom: 40px;
   }
@@ -672,20 +663,12 @@ a:link {
     width: 390px;
     height: 168px;
   }
-  .product__list__cover--reverse {
-    margin-right: 30px;
-    margin-left: 0;
-  }
   .product__list__icon, .product__list__icon--alter {
     max-height: 32px;
     max-width: 32px;
   }
 }
 @media screen and (max-width: 375px) {
-  .product__container {
-    width: 92%;
-    margin: 0 auto;
-  }
   .product__title {
     margin-bottom: 20px;
   }
@@ -711,9 +694,7 @@ a:link {
   .product__list__title {
     position: absolute;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    color: #ffffff;
+    margin: 0;
   }
 }
 .txt-left {
@@ -756,6 +737,34 @@ a:link {
 }
 .txt-secondary-contrast {
   color: #000;
+}
+@media screen and (max-width: 768px) {
+  .txt-m-primary {
+    color: #aa0601;
+  }
+  .txt-m-primary-contrast {
+    color: #ffffff;
+  }
+  .txt-m-secondary {
+    color: #650300;
+  }
+  .txt-m-secondary-contrast {
+    color: #000;
+  }
+}
+@media screen and (max-width: 375px) {
+  .txt-s-primary {
+    color: #aa0601;
+  }
+  .txt-s-primary-contrast {
+    color: #ffffff;
+  }
+  .txt-s-secondary {
+    color: #650300;
+  }
+  .txt-s-secondary-contrast {
+    color: #000;
+  }
 }
 
 .bg-primary {
@@ -839,6 +848,34 @@ a:link {
 }
 .justify-between {
   justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .justify-m-start {
+    justify-content: start;
+  }
+  .justify-m-end {
+    justify-content: end;
+  }
+  .justify-m-center {
+    justify-content: center;
+  }
+  .justify-m-between {
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 375px) {
+  .justify-s-start {
+    justify-content: start;
+  }
+  .justify-s-end {
+    justify-content: end;
+  }
+  .justify-s-center {
+    justify-content: center;
+  }
+  .justify-s-between {
+    justify-content: space-between;
+  }
 }
 
 .align-items-start {

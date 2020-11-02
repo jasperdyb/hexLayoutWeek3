@@ -1,23 +1,13 @@
 $srcIconPath: "../../src/icon";
 
 .product {
-  color: $primary-color;
-
   &__title {
-    color: $secondary-color;
-    text-align: center;
     margin-bottom: 50px;
   }
 
   &__list {
     &__item {
-      display: flex;
-      align-items: center;
       margin-bottom: 32px;
-
-      &--reverse {
-        flex-direction: row-reverse;
-      }
 
       &:last-child {
         margin-bottom: 80px;
@@ -28,12 +18,10 @@ $srcIconPath: "../../src/icon";
       width: 635px;
       height: 320px;
       object-fit: cover;
+    }
 
-      margin-right: 30px;
-      &--reverse {
-        margin: 0;
-        margin-left: 30px;
-      }
+    &__title {
+      margin: 0 30px;
     }
 
     &__icon {
@@ -46,11 +34,6 @@ $srcIconPath: "../../src/icon";
       &--alter {
         display: none;
       }
-    }
-
-    &__title {
-      display: flex;
-      align-items: center;
     }
   }
 }
@@ -68,9 +51,6 @@ $srcIconPath: "../../src/icon";
       margin-left: 39px;
       &__item {
         margin-bottom: 8px;
-        &--reverse {
-          flex-direction: row;
-        }
 
         &:last-child {
           margin-bottom: 40px;
@@ -79,10 +59,6 @@ $srcIconPath: "../../src/icon";
       &__cover {
         width: 390px;
         height: 168px;
-        &--reverse {
-          margin-right: 30px;
-          margin-left: 0;
-        }
       }
 
       &__icon {
@@ -90,7 +66,6 @@ $srcIconPath: "../../src/icon";
         &--alter {
           max-height: 32px;
           max-width: 32px;
-          // object-fit: scale-down;
         }
       }
     }
@@ -98,11 +73,6 @@ $srcIconPath: "../../src/icon";
 }
 @media screen and (max-width: 375px) {
   .product {
-    &__container {
-      width: (345/375) * 100%;
-      margin: 0 auto;
-    }
-
     &__title {
       margin-bottom: 20px;
     }
@@ -132,9 +102,7 @@ $srcIconPath: "../../src/icon";
       &__title {
         position: absolute;
         width: 100%;
-        display: flex;
-        justify-content: center;
-        color: $primary-contrast-color;
+        margin: 0;
       }
     }
   }

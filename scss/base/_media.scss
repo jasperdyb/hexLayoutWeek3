@@ -1,0 +1,10 @@
+$breakpoints: (
+  "m": 768px,
+  "s": 375px,
+);
+
+@mixin media-query($breakpoint) {
+  @media screen and (max-width: $breakpoint) {
+    @content;
+  }
+} ;

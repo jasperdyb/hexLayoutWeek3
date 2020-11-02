@@ -49,7 +49,7 @@
   }
 }
 
-.justify {
+@mixin justify {
   &-start {
     justify-content: start;
   }
@@ -64,6 +64,22 @@
 
   &-between {
     justify-content: space-between;
+  }
+}
+
+.justify {
+  @include justify;
+
+  @media screen and (max-width: 768px) {
+    &-m {
+      @include justify;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    &-s {
+      @include justify;
+    }
   }
 }
 
