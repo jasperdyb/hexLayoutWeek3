@@ -6,15 +6,6 @@ $srcImgPath: "../../src/img";
   height: 840px;
   padding-top: 350px;
   margin-bottom: 64px;
-  color: $secondary-color;
-
-  &__container {
-    margin-left: (939px/1920px) * 100%;
-  }
-
-  &__subTitle {
-    margin-left: 1002px-939px;
-  }
 }
 @media screen and (max-width: 768px) {
   .cover {

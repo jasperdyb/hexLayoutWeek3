@@ -1,11 +1,6 @@
 .intro {
   color: $secondary-color;
   margin-bottom: 144px;
-  &__container {
-    width: ((1920px-428px * 2) /1920px) * 100%;
-    margin: 0 auto;
-    text-align: center;
-  }
 
   &__title {
     margin-bottom: 60px;
