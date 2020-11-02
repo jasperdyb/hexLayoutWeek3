@@ -1,0 +1,29 @@
+@import "../themes/theme";
+
+.txt {
+  &-primary {
+    color: $primary-color;
+  }
+
+  &-primary-contrast {
+    color: $primary-contrast-color;
+  }
+
+  &-secondary {
+    color: $secondary-color;
+  }
+
+  &-secondary-contrast {
+    color: $secondary-contrast-color;
+  }
+}
+
+.bg {
+  &-primary {
+    background-color: $primary-color;
+  }
+
+  &-secondary {
+    background-color: $secondary-color;
+  }
+}
