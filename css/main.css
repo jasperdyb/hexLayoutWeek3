@@ -1550,3 +1550,12 @@ select[multiple] {
     height: 100%;
   }
 }
+.icon {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  background-size: cover;
+}
+.icon-red {
+  fill: red;
+}
