@@ -1,4 +1,6 @@
-.txt {
+@import "media";
+
+@mixin txt {
   &-left {
     text-align: left;
   }
@@ -20,7 +22,7 @@
   }
 }
 
-.fw {
+@mixin fw {
   &-regular {
     font-weight: 400;
   }
@@ -35,5 +37,29 @@
 
   &-black {
     font-weight: 900;
+  }
+}
+
+.txt {
+  @include txt;
+
+  @each $tag, $breakpoint in $breakpoints {
+    @include media-query($breakpoint) {
+      &-#{$tag} {
+        @include txt;
+      }
+    }
+  }
+}
+
+.fw {
+  @include fw;
+
+  @each $tag, $breakpoint in $breakpoints {
+    @include media-query($breakpoint) {
+      &-#{$tag} {
+        @include fw;
+      }
+    }
   }
 }
