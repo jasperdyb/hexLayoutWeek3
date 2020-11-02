@@ -25,11 +25,9 @@ $srcIconPath: "../../src/icon";
     }
 
     &__icon {
-      &,
-      &--alter {
-        height: 50px;
-        margin-right: 8px;
-      }
+      width: 48px;
+      height: 48px;
+      margin-right: 8px;
 
       &--alter {
         display: none;
@@ -62,11 +60,7 @@ $srcIconPath: "../../src/icon";
       }
 
       &__icon {
-        &,
-        &--alter {
-          max-height: 32px;
-          max-width: 32px;
-        }
+        transform: scale(0.66);
       }
     }
   }
@@ -90,13 +84,6 @@ $srcIconPath: "../../src/icon";
       &__cover {
         width: 100%;
         height: 134px;
-      }
-
-      &__icon {
-        display: none;
-        &--alter {
-          display: block;
-        }
       }
 
       &__title {

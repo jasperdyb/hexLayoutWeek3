@@ -1,46 +1,56 @@
 @import "../themes/theme";
 @import "media";
 
-@mixin txt {
-  &-primary {
-    color: $primary-color;
-  }
-
-  &-primary-contrast {
-    color: $primary-contrast-color;
-  }
-
-  &-secondary {
-    color: $secondary-color;
-  }
-
-  &-secondary-contrast {
-    color: $secondary-contrast-color;
-  }
-
-  &-grey {
-    color: grey;
-  }
-}
-
 .txt {
-  @include txt;
+  @each $theme, $color in $colors {
+    &-#{$theme} {
+      color: $color;
+    }
+  }
 
   @each $tag, $breakpoint in $breakpoints {
     @include media-query($breakpoint) {
-      &-#{$tag} {
-        @include txt;
+      @each $theme, $color in $colors {
+        &-#{$tag}-#{$theme} {
+          color: $color;
+        }
       }
     }
   }
 }
 
 .bg {
-  &-primary {
-    background-color: $primary-color;
+  @each $theme, $color in $colors {
+    &-#{$theme} {
+      background-color: $color;
+    }
   }
 
-  &-secondary {
-    background-color: $secondary-color;
+  @each $tag, $breakpoint in $breakpoints {
+    @include media-query($breakpoint) {
+      @each $theme, $color in $colors {
+        &-#{$tag}-#{$theme} {
+          background-color: $color;
+        }
+      }
+    }
+  }
+}
+
+.icon {
+  @each $theme, $color in $colors {
+    &-#{$theme} {
+      fill: $color;
+    }
+  }
+
+  @each $tag, $breakpoint in $breakpoints {
+    @include media-query($breakpoint) {
+      @each $theme, $color in $colors {
+        &-#{$tag}-#{$theme} {
+          fill: $color;
+        }
+      }
+    }
   }
 }
