@@ -1,2 +1,70 @@
 .coBrand {
+  width: 100%;
+  height: 743px;
+  background-image: url("../../src/img/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  box-sizing: border-box;
+  padding-top: 64px;
+  margin-bottom: 64px;
+
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__brand {
+    position: relative;
+
+    &__name {
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+
+    &__cover {
+      width: 540px;
+      height: 472px;
+      object-fit: cover;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .coBrand {
+    height: 437px;
+    padding-top: 40px;
+    margin-bottom: 40px;
+
+    &__title {
+      margin-bottom: 32px;
+    }
+
+    &__brand {
+      &__cover {
+        width: 330px;
+        height: 280px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .coBrand {
+    height: 696px;
+    padding-top: 32px;
+    margin-bottom: 32px;
+
+    &__title {
+      margin-bottom: 20px;
+    }
+
+    &__brand {
+      margin-bottom: 16px;
+      &__cover {
+        width: 100%;
+        height: 284px;
+      }
+    }
+  }
 }

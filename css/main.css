@@ -505,7 +505,6 @@ a:link {
   .navList__item {
     box-sizing: border-box;
     border: 1px solid #ffffff;
-    width: 50%;
     margin: 0;
     padding: 8px 0;
   }
@@ -697,6 +696,65 @@ a:link {
     margin: 0;
   }
 }
+.coBrand {
+  width: 100%;
+  height: 743px;
+  background-image: url("../../src/img/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  box-sizing: border-box;
+  padding-top: 64px;
+  margin-bottom: 64px;
+}
+.coBrand__title {
+  margin-bottom: 60px;
+}
+.coBrand__brand {
+  position: relative;
+}
+.coBrand__brand__name {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.coBrand__brand__cover {
+  width: 540px;
+  height: 472px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .coBrand {
+    height: 437px;
+    padding-top: 40px;
+    margin-bottom: 40px;
+  }
+  .coBrand__title {
+    margin-bottom: 32px;
+  }
+  .coBrand__brand__cover {
+    width: 330px;
+    height: 280px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .coBrand {
+    height: 696px;
+    padding-top: 32px;
+    margin-bottom: 32px;
+  }
+  .coBrand__title {
+    margin-bottom: 20px;
+  }
+  .coBrand__brand {
+    margin-bottom: 16px;
+  }
+  .coBrand__brand__cover {
+    width: 100%;
+    height: 284px;
+  }
+}
 .txt-left {
   text-align: left;
 }
@@ -712,6 +770,40 @@ a:link {
 .txt-uppercase {
   text-transform: uppercase;
 }
+@media screen and (max-width: 768px) {
+  .txt-m-left {
+    text-align: left;
+  }
+  .txt-m-right {
+    text-align: right;
+  }
+  .txt-m-center {
+    text-align: center;
+  }
+  .txt-m-italic {
+    font-style: italic;
+  }
+  .txt-m-uppercase {
+    text-transform: uppercase;
+  }
+}
+@media screen and (max-width: 375px) {
+  .txt-s-left {
+    text-align: left;
+  }
+  .txt-s-right {
+    text-align: right;
+  }
+  .txt-s-center {
+    text-align: center;
+  }
+  .txt-s-italic {
+    font-style: italic;
+  }
+  .txt-s-uppercase {
+    text-transform: uppercase;
+  }
+}
 
 .fw-regular {
   font-weight: 400;
@@ -724,6 +816,34 @@ a:link {
 }
 .fw-black {
   font-weight: 900;
+}
+@media screen and (max-width: 768px) {
+  .fw-m-regular {
+    font-weight: 400;
+  }
+  .fw-m-medium {
+    font-weight: 500;
+  }
+  .fw-m-bold {
+    font-weight: 700;
+  }
+  .fw-m-black {
+    font-weight: 900;
+  }
+}
+@media screen and (max-width: 375px) {
+  .fw-s-regular {
+    font-weight: 400;
+  }
+  .fw-s-medium {
+    font-weight: 500;
+  }
+  .fw-s-bold {
+    font-weight: 700;
+  }
+  .fw-s-black {
+    font-weight: 900;
+  }
 }
 
 .txt-primary {
