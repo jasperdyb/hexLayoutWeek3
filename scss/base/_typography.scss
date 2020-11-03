@@ -8,7 +8,7 @@ body {
   font-family: "Roboto", "Noto Sans TC", sans-serif;
 }
 
-$font-sizes: 14, 16, 20, 24, 48, 36, 64, 72;
+$font-sizes: 14, 16, 20, 24, 32, 36, 42, 48, 64, 72;
 
 @each $fz in $font-sizes {
   .fz-#{$fz} {

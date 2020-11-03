@@ -1,0 +1,9 @@
+.pagination {
+  width: fit-content;
+  margin: 0 auto;
+
+  &__item {
+    padding: 10px 12px;
+    border: 1px solid #555555;
+  }
+}

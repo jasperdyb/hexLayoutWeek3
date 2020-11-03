@@ -61,9 +61,46 @@ $srcIconPath: "../../src/icon";
   }
 
   &__cover {
+    &__list {
+      height: 309px;
+      margin-bottom: 88px;
+    }
   }
 
   &__display {
+    margin-bottom: 156px;
+    &__wrapper {
+      margin-bottom: 100px;
+    }
+
+    &__list {
+      margin-left: -15px;
+      margin-right: -15px;
+      margin-bottom: -104px;
+    }
+
+    &__title {
+      padding-bottom: 40px;
+    }
+
+    &__item {
+      width: 25%;
+      box-sizing: border-box;
+      padding: 0 15px;
+      margin-bottom: 104px;
+    }
+
+    &__cover {
+      width: 100%;
+      height: 164px;
+    }
+
+    &__color {
+      width: 24px;
+      height: 24px;
+      border-radius: 4px;
+      margin-right: 8px;
+    }
   }
 }
 
