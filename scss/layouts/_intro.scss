@@ -12,7 +12,6 @@
 
     &__item {
       width: 20%;
-
       &--order {
         order: 0;
       }
@@ -68,9 +67,6 @@
 @media screen and (max-width: 375px) {
   .intro {
     margin-bottom: 84px;
-    &__container {
-      width: (264px /375px) * 100%;
-    }
 
     &__title {
       margin-bottom: 20px;
