@@ -784,7 +784,8 @@ select[multiple] {
     height: 168px;
   }
   .product__list__icon {
-    transform: scale(0.66);
+    word-wrap: 32px;
+    height: 32px;
   }
 }
 @media screen and (max-width: 375px) {
@@ -977,6 +978,8 @@ select[multiple] {
   margin-bottom: 20px;
 }
 .footer__contact__icon {
+  width: 48px;
+  height: 48px;
   margin-right: 17px;
 }
 .footer__right {
@@ -1610,6 +1613,9 @@ select[multiple] {
     height: 100%;
   }
 }
-.icon {
-  display: inline-block;
+.rounded {
+  border: 50%;
+}
+.rounded-circle {
+  border-radius: 50%;
 }

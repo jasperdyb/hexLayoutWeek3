@@ -60,7 +60,8 @@ $srcIconPath: "../../src/icon";
       }
 
       &__icon {
-        transform: scale(0.66);
+        word-wrap: 32px;
+        height: 32px;
       }
     }
   }
