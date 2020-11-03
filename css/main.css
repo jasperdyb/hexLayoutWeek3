@@ -593,8 +593,11 @@ select[multiple] {
 .product__list__cover img {
   width: 100%;
 }
-.product__list__title {
+.product__list__link {
   margin: 0 30px;
+}
+.product__list__title {
+  margin-left: 8px;
 }
 .product__icon {
   width: 48px;
@@ -620,7 +623,7 @@ select[multiple] {
     width: 390px;
     height: 168px;
   }
-  .product__list__title {
+  .product__list__link {
     margin: 0 0 0 30px;
   }
   .product__icon {
@@ -645,7 +648,7 @@ select[multiple] {
     width: 100%;
     height: 134px;
   }
-  .product__list__title {
+  .product__list__link {
     position: absolute;
     width: 100%;
     margin: 0;
