@@ -137,7 +137,8 @@ table {
   border-spacing: 0;
 }
 
-a:link {
+a:link,
+a:visited {
   color: inherit;
   text-decoration: none;
 }
@@ -743,8 +744,8 @@ select[multiple] {
   margin-bottom: 80px;
 }
 .product__list__cover {
-  width: 635px;
-  height: 320px;
+  width: 60%;
+  max-width: 635px;
   object-fit: cover;
 }
 .product__list__title {
@@ -830,8 +831,8 @@ select[multiple] {
   transform: translate(0, -50%);
 }
 .coBrand__brand__cover {
-  width: 540px;
-  height: 472px;
+  width: 100%;
+  max-width: 540px;
   object-fit: cover;
 }
 

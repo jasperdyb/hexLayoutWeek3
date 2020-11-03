@@ -1,9 +1,11 @@
 .container {
-  max-width: (1920px - 405px * 2);
+  max-width: (1920px - (405px * 2));
+
   margin: 0 auto;
 
   &--modify {
     max-width: (1920px - 428.5px * 2);
+
     margin: 0 auto;
   }
 

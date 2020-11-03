@@ -23,8 +23,8 @@
     }
 
     &__cover {
-      width: 540px;
-      height: 472px;
+      width: 100%;
+      max-width: 540px;
       object-fit: cover;
     }
   }

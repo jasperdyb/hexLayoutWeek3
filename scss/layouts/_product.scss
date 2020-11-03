@@ -15,8 +15,8 @@ $srcIconPath: "../../src/icon";
     }
 
     &__cover {
-      width: 635px;
-      height: 320px;
+      width: 60%;
+      max-width: 635px;
       object-fit: cover;
     }
 
