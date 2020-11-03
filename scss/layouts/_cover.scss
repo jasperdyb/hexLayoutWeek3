@@ -1,7 +1,7 @@
 $srcImgPath: "../../src/img";
 
 .cover {
-  background-image: url(#{$srcImgPath}/banner.png);
+  background-image: url("#{$srcImgPath}/banner.png");
   box-sizing: border-box;
   height: 840px;
 
@@ -9,7 +9,7 @@ $srcImgPath: "../../src/img";
 }
 @media screen and (max-width: 768px) {
   .cover {
-    background-image: url(#{$srcImgPath}/banner-sm.png);
+    background-image: url("#{$srcImgPath}/banner-sm.png");
     margin-bottom: 40px;
 
     &__container {

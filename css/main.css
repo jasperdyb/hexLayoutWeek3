@@ -474,7 +474,7 @@ select[multiple] {
   }
 }
 .cover {
-  background-image: url(../../src/img/banner.png);
+  background-image: url("../../src/img/banner.png");
   box-sizing: border-box;
   height: 840px;
   margin-bottom: 64px;
@@ -482,7 +482,7 @@ select[multiple] {
 
 @media screen and (max-width: 768px) {
   .cover {
-    background-image: url(../../src/img/banner-sm.png);
+    background-image: url("../../src/img/banner-sm.png");
     margin-bottom: 40px;
   }
   .cover__container {
