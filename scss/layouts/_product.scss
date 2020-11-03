@@ -25,15 +25,23 @@ $srcIconPath: "../../src/icon";
       margin: 0 30px;
     }
 
-    &__icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 8px;
-
-      &--alter {
-        display: none;
-      }
+    &__link {
+      margin-left: 8px;
     }
+  }
+
+  &__icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  &__nav {
+  }
+
+  &__cover {
+  }
+
+  &__display {
   }
 }
 
@@ -64,13 +72,18 @@ $srcIconPath: "../../src/icon";
         margin: 0 0 0 30px;
       }
 
-      &__icon {
-        width: 32px;
-        height: 32px;
+      &__link {
+        margin-left: 8px;
       }
+    }
+
+    &__icon {
+      width: 32px;
+      height: 32px;
     }
   }
 }
+
 @media screen and (max-width: 375px) {
   .product {
     &__title {
