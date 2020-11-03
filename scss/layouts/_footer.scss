@@ -21,6 +21,8 @@
     }
 
     &__icon {
+      width: 48px;
+      height: 48px;
       margin-right: 17px;
     }
   }
@@ -28,7 +30,6 @@
   &__right {
     padding-top: 36px;
   }
-
   &__social {
     &__icon {
       margin-left: 32px;
