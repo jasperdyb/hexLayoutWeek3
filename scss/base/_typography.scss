@@ -5,12 +5,8 @@
 
 @import "../utils/media";
 
-.roboto {
-  font-family: "Roboto", sans-serif;
-}
-
-.notoSans {
-  font-family: "Noto Sans TC", sans-serif;
+body {
+  font-family: "Roboto", "Noto Sans TC", sans-serif;
 }
 
 $font-sizes: 14, 16, 20, 24, 48, 36, 64, 72;
