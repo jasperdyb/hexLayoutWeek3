@@ -302,12 +302,8 @@ a:link {
   margin-right: 25px !important;
 }
 
-.roboto {
-  font-family: "Roboto", sans-serif;
-}
-
-.notoSans {
-  font-family: "Noto Sans TC", sans-serif;
+body {
+  font-family: "Roboto", "Noto Sans TC", sans-serif;
 }
 
 .fz-14 {
