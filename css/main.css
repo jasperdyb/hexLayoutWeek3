@@ -157,6 +157,11 @@ body {
   line-height: 1.5;
 }
 
+.fz-18 {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
 .fz-20 {
   font-size: 20px;
   line-height: 1.5;
@@ -243,6 +248,11 @@ body {
   }
 }
 @media screen and (max-width: 375px) {
+  .fz-s-11 {
+    font-size: 11px;
+    line-height: 1.5;
+  }
+
   .fz-s-14 {
     font-size: 14px;
     line-height: 1.5;
@@ -279,6 +289,10 @@ body {
 
   .lh-s-30 {
     line-height: 30px;
+  }
+
+  .lh-s-36 {
+    line-height: 36px;
   }
 
   .lh-s-48 {
@@ -634,9 +648,22 @@ select[multiple] {
 .product__nav__title {
   margin-left: 8px;
 }
-.product__cover__list {
+.product__cover {
   height: 309px;
   margin-bottom: 88px;
+}
+.product__cover__left {
+  background-image: url("../../src/img/banner-1.png");
+}
+.product__cover__right {
+  background-image: url("../../src/img/banner-2.png");
+}
+.product__cover__left, .product__cover__right {
+  height: 100%;
+  width: 945px;
+  max-width: 50%;
+  background-size: cover;
+  background-position: center center;
 }
 .product__display {
   margin-bottom: 156px;
@@ -696,6 +723,38 @@ select[multiple] {
     width: 32px;
     height: 32px;
   }
+  .product__nav__item {
+    position: relative;
+    padding: 16px 0;
+  }
+  .product__nav__item.selected::after {
+    height: 8px;
+  }
+  .product__cover {
+    margin-bottom: 40px;
+  }
+  .product__cover__left {
+    background-image: url("../../src/img/banner-1-sm.jpg");
+  }
+  .product__cover__right {
+    background-image: url("../../src/img/banner-2-sm.jpg");
+  }
+  .product__display {
+    margin-bottom: 104px;
+  }
+  .product__display__title {
+    padding-bottom: 32px;
+  }
+  .product__display__wrapper {
+    margin-bottom: 105px;
+  }
+  .product__display__list {
+    margin-bottom: -72px;
+  }
+  .product__display__item {
+    width: 50%;
+    margin-bottom: 72px;
+  }
 }
 @media screen and (max-width: 375px) {
   .product__title {
@@ -718,6 +777,29 @@ select[multiple] {
     position: absolute;
     width: 100%;
     margin: 0;
+  }
+  .product__cover {
+    height: 144px;
+    margin-bottom: 30px;
+  }
+  .product__display {
+    margin-bottom: 56px;
+  }
+  .product__display__title {
+    padding-bottom: 20px;
+  }
+  .product__display__wrapper {
+    margin-bottom: 40px;
+  }
+  .product__display__list {
+    margin-bottom: -32px;
+  }
+  .product__display__cover {
+    height: 166px;
+  }
+  .product__display__item {
+    width: 100%;
+    margin-bottom: 32px;
   }
 }
 .coBrand {
@@ -1047,6 +1129,16 @@ select[multiple] {
   border: 1px solid #555555;
 }
 
+@media screen and (max-width: 768px) {
+  .pagination__item {
+    padding: 10px 15px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .pagination__item {
+    padding: 10px 9px;
+  }
+}
 .txt-left {
   text-align: left;
 }

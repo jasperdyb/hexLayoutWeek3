@@ -8,7 +8,7 @@ body {
   font-family: "Roboto", "Noto Sans TC", sans-serif;
 }
 
-$font-sizes: 14, 16, 20, 24, 32, 36, 42, 48, 64, 72;
+$font-sizes: 14, 16, 18, 20, 24, 32, 36, 42, 48, 64, 72;
 
 @each $fz in $font-sizes {
   .fz-#{$fz} {
@@ -36,8 +36,8 @@ $font-sizes: 14, 16, 20, 24, 32, 36, 42, 48, 64, 72;
 }
 
 @include media-query(map.get($breakpoints, s)) {
-  $s-font-sizes: 14, 16, 20, 24, 28, 32;
-  $s-line-hight: 25, 30, 48, 72;
+  $s-font-sizes: 11, 14, 16, 20, 24, 28, 32;
+  $s-line-hight: 25, 30, 36, 48, 72;
   @each $fz in $s-font-sizes {
     .fz-s-#{$fz} {
       font-size: #{$fz}px;
