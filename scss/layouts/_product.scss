@@ -1,3 +1,4 @@
+@import "../themes/theme";
 $srcIconPath: "../../src/icon";
 
 .product {
@@ -36,6 +37,27 @@ $srcIconPath: "../../src/icon";
   }
 
   &__nav {
+    &__item {
+      position: relative;
+      padding: 24px 0;
+      width: 33.333%;
+
+      &.selected {
+        &::after {
+          position: absolute;
+          bottom: 0;
+          content: "";
+          display: block;
+          width: 100%;
+          height: 16px;
+          background-color: $primary-color;
+        }
+      }
+    }
+
+    &__title {
+      margin-left: 8px;
+    }
   }
 
   &__cover {

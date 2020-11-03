@@ -19,6 +19,11 @@
     max-width: (1920px - 595px * 2);
     margin: 0 auto;
   }
+
+  &--nav {
+    max-width: (1920px - 267px * 2);
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 768px) {
