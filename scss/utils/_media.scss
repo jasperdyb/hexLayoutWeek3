@@ -4,7 +4,7 @@ $breakpoints: (
 );
 
 @mixin media-query($breakpoint) {
-  @media screen and (max-width: $breakpoint) {
+  @media (max-width: $breakpoint) {
     @content;
   }
 } ;
