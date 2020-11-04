@@ -1,0 +1,45 @@
+.productCover {
+  height: 309px;
+
+  &__left {
+    background-image: url("#{$srcImgPath}/banner-1.png"),
+      url("#{$srcGithubImgPath}/banner-1.png");
+  }
+
+  &__right {
+    background-image: url("#{$srcImgPath}/banner-2.png"),
+      url("#{$srcGithubImgPath}/banner-2.png");
+  }
+
+  &__left,
+  &__right {
+    height: 100%;
+    width: 945px;
+    max-width: 50%;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  margin-bottom: 88px;
+}
+@media screen and (max-width: 768px) {
+  .productCover {
+    margin-bottom: 40px;
+    &__left {
+      background-image: url("#{$srcImgPath}/banner-1-sm.jpg"),
+        url("#{$srcGithubImgPath}/banner-1-sm.png");
+    }
+
+    &__right {
+      background-image: url("#{$srcImgPath}/banner-2-sm.jpg"),
+        url("#{$srcGithubImgPath}/banner-2-sm.png");
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .productCover {
+    height: 144px;
+    margin-bottom: 30px;
+  }
+}
