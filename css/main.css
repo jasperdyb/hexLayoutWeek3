@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -506,7 +507,7 @@ select[multiple] {
   }
 }
 .cover {
-  background-image: url("../../src/img/banner.png");
+  background-image: url("../../src/img/banner.png"), url("./src/img/banner.png");
   box-sizing: border-box;
   height: 840px;
   margin-bottom: 64px;
@@ -514,7 +515,7 @@ select[multiple] {
 
 @media screen and (max-width: 768px) {
   .cover {
-    background-image: url("../../src/img/banner-sm.png");
+    background-image: url("../../src/img/banner-sm.png"), url("./src/img/banner-sm.png");
     margin-bottom: 40px;
   }
   .cover__container {
@@ -640,10 +641,10 @@ select[multiple] {
   margin-bottom: 88px;
 }
 .product__cover__left {
-  background-image: url("../../src/img/banner-1.png");
+  background-image: url("../../src/img/banner-1.png"), url("./src/img/banner-1.png");
 }
 .product__cover__right {
-  background-image: url("../../src/img/banner-2.png");
+  background-image: url("../../src/img/banner-2.png") ，url("./src/img/banner-2.png");
 }
 .product__cover__left, .product__cover__right {
   height: 100%;
@@ -785,7 +786,7 @@ select[multiple] {
 .coBrand {
   width: 100%;
   height: 743px;
-  background-image: url("../../src/img/bg.png");
+  background-image: url("../../src/img/bg.png"), url("./src/img/bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;

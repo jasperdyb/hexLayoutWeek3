@@ -1,7 +1,11 @@
+$srcImgPath: "../../src/img";
+$srcGithubImgPath: "./src/img";
+
 .coBrand {
   width: 100%;
   height: 743px;
-  background-image: url("../../src/img/bg.png");
+  background-image: url("#{$srcImgPath}/bg.png"),
+    url("#{$srcGithubImgPath}/bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;

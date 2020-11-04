@@ -1,6 +1,7 @@
 @import "../themes/theme";
 $srcIconPath: "../../src/icon";
 $srcImgPath: "../../src/img";
+$srcGithubImgPath: "./src/img";
 
 .product {
   &__title {
@@ -41,11 +42,13 @@ $srcImgPath: "../../src/img";
     height: 309px;
 
     &__left {
-      background-image: url("#{$srcImgPath}/banner-1.png");
+      background-image: url("#{$srcImgPath}/banner-1.png"),
+        url("#{$srcGithubImgPath}/banner-1.png");
     }
 
     &__right {
-      background-image: url("#{$srcImgPath}/banner-2.png");
+      background-image: url("#{$srcImgPath}/banner-2.png")
+        ，url("#{$srcGithubImgPath}/banner-2.png");
     }
 
     &__left,
