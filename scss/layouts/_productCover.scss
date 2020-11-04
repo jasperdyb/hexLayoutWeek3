@@ -5,13 +5,26 @@ $srcGithubImgPath: "../src/img";
   height: 309px;
 
   &__left {
-    background-image: url("#{$srcImgPath}/banner-1.png"),
-      url("#{$srcGithubImgPath}/banner-1.png");
+    &.productOptical {
+      background-image: url("#{$srcImgPath}/banner-1.png"),
+        url("#{$srcGithubImgPath}/banner-1.png");
+    }
+
+    &.productSun {
+      background-image: url("#{$srcImgPath}/banner-3.png"),
+        url("#{$srcGithubImgPath}/banner-3.png");
+    }
   }
 
   &__right {
-    background-image: url("#{$srcImgPath}/banner-2.png"),
-      url("#{$srcGithubImgPath}/banner-2.png");
+    &.productOptical {
+      background-image: url("#{$srcImgPath}/banner-2.png"),
+        url("#{$srcGithubImgPath}/banner-2.png");
+    }
+    &.productSun {
+      background-image: url("#{$srcImgPath}/banner-4.png"),
+        url("#{$srcGithubImgPath}/banner-4.png");
+    }
   }
 
   &__left,
@@ -29,13 +42,27 @@ $srcGithubImgPath: "../src/img";
   .productCover {
     margin-bottom: 40px;
     &__left {
-      background-image: url("#{$srcImgPath}/banner-1-sm.jpg"),
-        url("#{$srcGithubImgPath}/banner-1-sm.png");
+      &.productOptical {
+        background-image: url("#{$srcImgPath}/banner-1-sm.jpg"),
+          url("#{$srcGithubImgPath}/banner-1-sm.png");
+      }
+
+      &.productSun {
+        background-image: url("#{$srcImgPath}/banner-3-sm.png"),
+          url("#{$srcGithubImgPath}/banner-3-sm.png");
+      }
     }
 
     &__right {
-      background-image: url("#{$srcImgPath}/banner-2-sm.jpg"),
-        url("#{$srcGithubImgPath}/banner-2-sm.png");
+      &.productOptical {
+        background-image: url("#{$srcImgPath}/banner-2-sm.jpg"),
+          url("#{$srcGithubImgPath}/banner-2-sm.png");
+      }
+
+      &.productSun {
+        background-image: url("#{$srcImgPath}/banner-4-sm.png"),
+          url("#{$srcGithubImgPath}/banner-4-sm.png");
+      }
     }
   }
 }
