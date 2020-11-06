@@ -22,16 +22,33 @@ body {
 
 .h1 {
   font-size: 64px;
+
+  &-large {
+    font-size: 72px;
+  }
 }
 
 .h2 {
   font-size: 48px;
+
+  &-small {
+    font-size: 42px;
+  }
 }
+
 .h3 {
   font-size: 36px;
+
+  &-small {
+    font-size: 32px;
+  }
 }
 .h4 {
   font-size: 24px;
+
+  &-small {
+    font-size: 20px;
+  }
 }
 .h5 {
   font-size: 16px;
@@ -44,41 +61,39 @@ body {
   font-size: 16px;
 }
 
-$font-sizes: 18, 20, 32, 36, 42, 72;
-
-@each $fz in $font-sizes {
-  .fz-#{$fz} {
-    font-size: #{$fz}px;
-  }
-}
-
 @include media-query(map.get($breakpoints, m)) {
   .h1 {
     font-size: 48px;
+    &-large {
+      font-size: 32px;
+    }
   }
 
   .h2 {
     font-size: 32px;
+
+    &-small {
+      font-size: 32px;
+      line-height: 1.3;
+    }
   }
 
   .h3 {
     font-size: 20px;
+    &-small {
+      font-size: 24px;
+    }
   }
 
   .h4 {
     font-size: 20px;
+    &-small {
+      font-size: 16px;
+    }
   }
 
   .h5 {
     font-size: 14px;
-  }
-
-  $m-font-sizes: 16, 24, 28, 32, 36;
-
-  @each $fz in $m-font-sizes {
-    .fz-m-#{$fz} {
-      font-size: #{$fz}px;
-    }
   }
 }
 
@@ -89,16 +104,20 @@ $font-sizes: 18, 20, 32, 36, 42, 72;
 
   .h2 {
     font-size: 24px;
+
+    &_large {
+      font-size: 28px;
+    }
+
+    &-small {
+      font-size: 20px;
+    }
   }
 
   .h3 {
     font-size: 16px;
-  }
-
-  $s-font-sizes: 11, 14, 20, 28;
-  @each $fz in $s-font-sizes {
-    .fz-s-#{$fz} {
-      font-size: #{$fz}px;
+    &-small {
+      font-size: 16px;
     }
   }
 }
