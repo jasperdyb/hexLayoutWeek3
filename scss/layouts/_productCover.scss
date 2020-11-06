@@ -38,7 +38,7 @@ $srcGithubImgPath: "../src/img";
 
   margin-bottom: 88px;
 }
-@media screen and (max-width: 768px) {
+@include media-query(map.get($breakpoints, m)) {
   .productCover {
     margin-bottom: 40px;
     &__left {
@@ -67,7 +67,7 @@ $srcGithubImgPath: "../src/img";
   }
 }
 
-@media screen and (max-width: 375px) {
+@include media-query(map.get($breakpoints, s)) {
   .productCover {
     height: 144px;
     margin-bottom: 30px;

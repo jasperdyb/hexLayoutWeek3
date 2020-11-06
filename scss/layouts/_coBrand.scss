@@ -34,7 +34,7 @@ $srcGithubImgPath: "../src/img";
   }
 }
 
-@media screen and (max-width: 768px) {
+@include media-query(map.get($breakpoints, m)) {
   .coBrand {
     height: 437px;
     padding-top: 40px;
@@ -53,7 +53,7 @@ $srcGithubImgPath: "../src/img";
   }
 }
 
-@media screen and (max-width: 375px) {
+@include media-query(map.get($breakpoints, s)) {
   .coBrand {
     height: 696px;
     padding-top: 32px;

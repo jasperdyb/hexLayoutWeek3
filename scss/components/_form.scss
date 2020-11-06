@@ -28,7 +28,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@include media-query(map.get($breakpoints, m)) {
   .form {
     &-group {
       margin-bottom: 8px;

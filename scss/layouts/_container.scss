@@ -25,8 +25,7 @@
     margin: 0 auto;
   }
 }
-
-@media screen and (max-width: 768px) {
+@include media-query(map.get($breakpoints, m)) {
   .container {
     &,
     &--modify,
@@ -47,7 +46,7 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@include media-query(map.get($breakpoints, s)) {
   .container {
     &,
     &--form {

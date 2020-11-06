@@ -19,7 +19,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@include media-query(map.get($breakpoints, m)) {
   .navbar {
     padding: 30px 39px;
   }
@@ -31,7 +31,7 @@
   }
 }
 
-@media (max-width: 375px) {
+@include media-query(map.get($breakpoints, s)) {
   .navbar {
     padding: 0;
   }

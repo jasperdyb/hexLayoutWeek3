@@ -1,2 +1,5 @@
+@use "sass:map";
+@import "../utils/media";
+
 @import "container", "navbar", "cover", "intro", "product", "coBrand", "opinion",
   "contact", "footer", "productCover", "productDisplay";

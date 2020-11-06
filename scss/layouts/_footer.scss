@@ -56,7 +56,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@include media-query(map.get($breakpoints, m)) {
   .footer {
     &__left {
       padding-top: 40px;
@@ -116,7 +116,7 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@include media-query(map.get($breakpoints, s)) {
   .footer {
     &__left {
       padding-top: 23px;

@@ -71,7 +71,7 @@
     margin-right: 8px;
   }
 }
-@media screen and (max-width: 768px) {
+@include media-query(map.get($breakpoints, m)) {
   .productDisplay {
     margin-bottom: 104px;
 
@@ -99,7 +99,7 @@
     }
   }
 }
-@media screen and (max-width: 375px) {
+@include media-query(map.get($breakpoints, s)) {
   .productDisplay {
     margin-bottom: 56px;
 

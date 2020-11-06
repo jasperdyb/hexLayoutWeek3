@@ -36,7 +36,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@include media-query(map.get($breakpoints, m)) {
   .product {
     &__container {
       width: 100%;
@@ -71,7 +71,7 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@include media-query(map.get($breakpoints, s)) {
   .product {
     &__title {
       margin-bottom: 20px;
