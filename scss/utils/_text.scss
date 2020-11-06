@@ -1,6 +1,6 @@
 @import "media";
 
-@mixin txt {
+@mixin text {
   &-left {
     text-align: left;
   }
@@ -40,13 +40,13 @@
   }
 }
 
-.txt {
-  @include txt;
+.text {
+  @include text;
 
   @each $tag, $breakpoint in $breakpoints {
     @include media-query($breakpoint) {
       &-#{$tag} {
-        @include txt;
+        @include text;
       }
     }
   }

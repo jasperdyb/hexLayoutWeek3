@@ -1,7 +1,7 @@
 @import "../themes/theme";
 @import "media";
 
-.txt {
+.text {
   @each $theme, $color in $colors {
     &-#{$theme} {
       color: $color;

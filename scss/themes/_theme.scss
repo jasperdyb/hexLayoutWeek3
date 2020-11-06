@@ -1,11 +1,13 @@
 $primary-color: #aa0601;
-$primary-contrast-color: #ffffff;
 $secondary-color: #650300;
-$secondary-contrast-color: #000;
+$secondary-contrast-color: #aa06010d;
+$light: #ffffff;
+$dark: #000000;
 
 $colors: (
   primary: #aa0601,
-  primary-contrast: #ffffff,
   secondary: #650300,
-  secondary-contrast: #000,
+  secondary-contrast: #aa06010d,
+  light: #ffffff,
+  dark: #000000,
 );
