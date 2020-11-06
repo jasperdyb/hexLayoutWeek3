@@ -1,3 +1,5 @@
+$srcImgPath: "../src/img";
+
 .navbar {
   padding: 30px 88px;
 }
@@ -17,6 +19,16 @@
       margin-right: 0;
     }
   }
+}
+
+.logo {
+  background-image: url("#{$srcImgPath}/logo.png");
+  width: 80px;
+  height: 48px;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  float: left;
 }
 
 @include media-query(map.get($breakpoints, m)) {

@@ -1,9 +1,7 @@
-$srcImgPath: "../../src/img";
-$srcGithubImgPath: "../src/img";
+$srcImgPath: "../src/img";
 
 .cover {
-  background-image: url("#{$srcImgPath}/banner.png"),
-    url("#{$srcGithubImgPath}/banner.png");
+  background-image: url("#{$srcImgPath}/banner.png");
   box-sizing: border-box;
   height: 840px;
 
@@ -11,8 +9,7 @@ $srcGithubImgPath: "../src/img";
 }
 @include media-query(map.get($breakpoints, m)) {
   .cover {
-    background-image: url("#{$srcImgPath}/banner-sm.png"),
-      url("#{$srcGithubImgPath}/banner-sm.png");
+    background-image: url("#{$srcImgPath}/banner-sm.png");
     margin-bottom: 40px;
 
     &__container {
