@@ -1,19 +1,9 @@
 .container {
-  &,
-  &--modify,
-  &--form {
-    padding: 0 20px;
-  }
-
   max-width: (1920px - (405px * 2));
 
   margin: 0 auto;
-
-  &--modify {
-    max-width: (1920px - 428.5px * 2);
-
-    margin: 0 auto;
-  }
+  padding-top: 64px;
+  padding-bottom: 80px;
 
   &--form {
     max-width: (1920px - 595px * 2);
@@ -27,21 +17,12 @@
 }
 @include media-query(map.get($breakpoints, m)) {
   .container {
-    &,
-    &--modify,
-    &--form {
-      padding: 0;
-    }
-
     max-width: (768px - 39px * 2);
-
-    &--modify {
-      max-width: (768px - 85.5px * 2);
-    }
+    padding-top: 40px;
 
     &--form {
       max-width: 450px;
-      margin: 0 auto;
+      padding-top: 40px;
     }
   }
 }
@@ -51,10 +32,8 @@
     &,
     &--form {
       max-width: (375px - 15px * 2);
-    }
-
-    &--modify {
-      max-width: (375px - 69px * 2);
+      padding-top: 32px;
+      padding-bottom: 32px;
     }
   }
 }
