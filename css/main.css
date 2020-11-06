@@ -144,167 +144,139 @@ a:visited {
 }
 
 body {
-  font-family: "Roboto", "Noto Sans TC", sans-serif;
-}
-
-.fz-14 {
-  font-size: 14px;
+  font-family: "Roboto", "Noto Sans TC", " -apple-system", "BlinkMacSystemFont", "Segoe UI", "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif;
   line-height: 1.5;
 }
 
-.fz-16 {
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  line-height: 1.4;
+}
+
+.h1 {
+  font-size: 64px;
+}
+
+.h2 {
+  font-size: 48px;
+}
+
+.h3 {
+  font-size: 36px;
+}
+
+.h4 {
+  font-size: 24px;
+}
+
+.h5 {
   font-size: 16px;
-  line-height: 1.5;
+}
+
+.h6 {
+  font-size: 14px;
+}
+
+.p {
+  font-size: 16px;
 }
 
 .fz-18 {
   font-size: 18px;
-  line-height: 1.5;
 }
 
 .fz-20 {
   font-size: 20px;
-  line-height: 1.5;
-}
-
-.fz-24 {
-  font-size: 24px;
-  line-height: 1.5;
 }
 
 .fz-32 {
   font-size: 32px;
-  line-height: 1.5;
 }
 
 .fz-36 {
   font-size: 36px;
-  line-height: 1.5;
 }
 
 .fz-42 {
   font-size: 42px;
-  line-height: 1.5;
-}
-
-.fz-48 {
-  font-size: 48px;
-  line-height: 1.5;
-}
-
-.fz-64 {
-  font-size: 64px;
-  line-height: 1.5;
 }
 
 .fz-72 {
   font-size: 72px;
-  line-height: 1.5;
 }
 
 @media (max-width: 768px) {
-  .fz-m-14 {
+  .h1 {
+    font-size: 48px;
+  }
+
+  .h2 {
+    font-size: 32px;
+  }
+
+  .h3 {
+    font-size: 20px;
+  }
+
+  .h4 {
+    font-size: 20px;
+  }
+
+  .h5 {
     font-size: 14px;
-    line-height: 1.5;
   }
 
   .fz-m-16 {
     font-size: 16px;
-    line-height: 1.5;
-  }
-
-  .fz-m-20 {
-    font-size: 20px;
-    line-height: 1.5;
   }
 
   .fz-m-24 {
     font-size: 24px;
-    line-height: 1.5;
   }
 
   .fz-m-28 {
     font-size: 28px;
-    line-height: 1.5;
   }
 
   .fz-m-32 {
     font-size: 32px;
-    line-height: 1.5;
   }
 
   .fz-m-36 {
     font-size: 36px;
-    line-height: 1.5;
-  }
-
-  .fz-m-48 {
-    font-size: 48px;
-    line-height: 1.5;
-  }
-
-  .lh-m-25 {
-    line-height: 25px;
   }
 }
 @media (max-width: 375px) {
+  .h1 {
+    font-size: 32px;
+  }
+
+  .h2 {
+    font-size: 24px;
+  }
+
+  .h3 {
+    font-size: 16px;
+  }
+
   .fz-s-11 {
     font-size: 11px;
-    line-height: 1.5;
   }
 
   .fz-s-14 {
     font-size: 14px;
-    line-height: 1.5;
-  }
-
-  .fz-s-16 {
-    font-size: 16px;
-    line-height: 1.5;
   }
 
   .fz-s-20 {
     font-size: 20px;
-    line-height: 1.5;
-  }
-
-  .fz-s-24 {
-    font-size: 24px;
-    line-height: 1.5;
   }
 
   .fz-s-28 {
     font-size: 28px;
-    line-height: 1.5;
-  }
-
-  .fz-s-32 {
-    font-size: 32px;
-    line-height: 1.5;
-  }
-
-  .lh-s-19 {
-    line-height: 19px;
-  }
-
-  .lh-s-25 {
-    line-height: 25px;
-  }
-
-  .lh-s-30 {
-    line-height: 30px;
-  }
-
-  .lh-s-36 {
-    line-height: 36px;
-  }
-
-  .lh-s-48 {
-    line-height: 48px;
-  }
-
-  .lh-s-72 {
-    line-height: 72px;
   }
 }
 /* ----------------------------------------------------------------------------------------------------

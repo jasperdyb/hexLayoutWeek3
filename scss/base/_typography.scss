@@ -5,49 +5,100 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap");
 
 body {
-  font-family: "Roboto", "Noto Sans TC", sans-serif;
+  font-family: "Roboto", "Noto Sans TC", " -apple-system", "BlinkMacSystemFont",
+    "Segoe UI", "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif;
+
+  line-height: 1.5;
 }
 
-$font-sizes: 14, 16, 18, 20, 24, 32, 36, 42, 48, 64, 72;
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  line-height: 1.4;
+}
+
+.h1 {
+  font-size: 64px;
+}
+
+.h2 {
+  font-size: 48px;
+}
+.h3 {
+  font-size: 36px;
+}
+.h4 {
+  font-size: 24px;
+}
+.h5 {
+  font-size: 16px;
+}
+.h6 {
+  font-size: 14px;
+}
+
+.p {
+  font-size: 16px;
+}
+
+$font-sizes: 18, 20, 32, 36, 42, 72;
 
 @each $fz in $font-sizes {
   .fz-#{$fz} {
     font-size: #{$fz}px;
-    line-height: 1.5;
   }
 }
 
 @include media-query(map.get($breakpoints, m)) {
-  $m-font-sizes: 14, 16, 20, 24, 28, 32, 36, 48;
-  $m-line-hight: 25;
+  .h1 {
+    font-size: 48px;
+  }
+
+  .h2 {
+    font-size: 32px;
+  }
+
+  .h3 {
+    font-size: 20px;
+  }
+
+  .h4 {
+    font-size: 20px;
+  }
+
+  .h5 {
+    font-size: 14px;
+  }
+
+  $m-font-sizes: 16, 24, 28, 32, 36;
 
   @each $fz in $m-font-sizes {
     .fz-m-#{$fz} {
       font-size: #{$fz}px;
-      line-height: 1.5;
-    }
-  }
-
-  @each $lh in $m-line-hight {
-    .lh-m-#{$lh} {
-      line-height: #{$lh}px;
     }
   }
 }
 
 @include media-query(map.get($breakpoints, s)) {
-  $s-font-sizes: 11, 14, 16, 20, 24, 28, 32;
-  $s-line-hight: 19, 25, 30, 36, 48, 72;
+  .h1 {
+    font-size: 32px;
+  }
+
+  .h2 {
+    font-size: 24px;
+  }
+
+  .h3 {
+    font-size: 16px;
+  }
+
+  $s-font-sizes: 11, 14, 20, 28;
   @each $fz in $s-font-sizes {
     .fz-s-#{$fz} {
       font-size: #{$fz}px;
-      line-height: 1.5;
-    }
-  }
-
-  @each $lh in $s-line-hight {
-    .lh-s-#{$lh} {
-      line-height: #{$lh}px;
     }
   }
 }
