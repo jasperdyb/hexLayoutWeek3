@@ -10,13 +10,13 @@ $srcImgPath: "../src/img";
 
   &__item {
     height: fit-content;
-    margin: 0 32px;
 
-    &:first-child {
-      margin-left: 0;
-    }
-    &:last-child {
-      margin-right: 0;
+    a {
+      padding: 10px 32px;
+
+      &:hover {
+        background-color: $secondary-color;
+      }
     }
   }
 }
@@ -25,6 +25,7 @@ $srcImgPath: "../src/img";
   background-image: url("#{$srcImgPath}/logo.png");
   width: 80px;
   height: 48px;
+  background-size: contain;
   text-indent: 101%;
   overflow: hidden;
   white-space: nowrap;
@@ -38,7 +39,9 @@ $srcImgPath: "../src/img";
 
   .navList {
     &__item {
-      margin: 0 10px;
+      a {
+        padding: 10px 10px;
+      }
     }
   }
 }
@@ -49,18 +52,28 @@ $srcImgPath: "../src/img";
   }
 
   .logo {
-    width: fit-content;
+    width: 48px;
+    height: 29px;
+
     margin: 0 auto;
     padding: 10px 0;
   }
 
   .navList {
     &__item {
-      width: 50%;
       box-sizing: border-box;
+      width: 50%;
       border: 1px solid #ffffff;
-      margin: 0;
-      padding: 8px 0;
+
+      a {
+        display: block;
+        width: 100%;
+        padding: 8px 0;
+
+        &:hover {
+          background-color: $secondary-color;
+        }
+      }
     }
   }
 }

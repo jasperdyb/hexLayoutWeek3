@@ -413,19 +413,19 @@ select[multiple] {
 }
 .navList__item {
   height: fit-content;
-  margin: 0 32px;
 }
-.navList__item:first-child {
-  margin-left: 0;
+.navList__item a {
+  padding: 10px 32px;
 }
-.navList__item:last-child {
-  margin-right: 0;
+.navList__item a:hover {
+  background-color: #650300;
 }
 
 .logo {
   background-image: url("../src/img/logo.png");
   width: 80px;
   height: 48px;
+  background-size: contain;
   text-indent: 101%;
   overflow: hidden;
   white-space: nowrap;
@@ -437,8 +437,8 @@ select[multiple] {
     padding: 30px 39px;
   }
 
-  .navList__item {
-    margin: 0 10px;
+  .navList__item a {
+    padding: 10px 10px;
   }
 }
 @media (max-width: 375px) {
@@ -447,17 +447,24 @@ select[multiple] {
   }
 
   .logo {
-    width: fit-content;
+    width: 48px;
+    height: 29px;
     margin: 0 auto;
     padding: 10px 0;
   }
 
   .navList__item {
-    width: 50%;
     box-sizing: border-box;
+    width: 50%;
     border: 1px solid #ffffff;
-    margin: 0;
+  }
+  .navList__item a {
+    display: block;
+    width: 100%;
     padding: 8px 0;
+  }
+  .navList__item a:hover {
+    background-color: #650300;
   }
 }
 .cover {
