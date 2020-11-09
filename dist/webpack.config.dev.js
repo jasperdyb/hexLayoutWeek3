@@ -4,10 +4,12 @@ var path = require("path");
 
 var HtmlWebpackPlugin = require("html-webpack-plugin");
 
+var MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
 module.exports = {
-  entry: "./scss/main.scss",
+  entry: "./main.js",
   output: {
-    filename: "main.css",
+    filename: "bundle.js",
     path: path.resolve(__dirname, "dist")
   },
   plugins: [new HtmlWebpackPlugin({
@@ -22,12 +24,11 @@ module.exports = {
     title: "Product",
     filename: "products-sun.html",
     template: "src/template/page/product-sun.pug"
-  })],
+  }), new MiniCssExtractPlugin()],
   module: {
     rules: [{
-      test: /\.s[ac]ss$/i,
-      use: [// Creates `style` nodes from JS strings
-      "style-loader", // Translates CSS into CommonJS
+      test: /\.(sa|sc|c)ss$/,
+      use: [MiniCssExtractPlugin.loader, // Translates CSS into CommonJS
       "css-loader", // Compiles Sass to CSS
       "sass-loader"]
     }, {
