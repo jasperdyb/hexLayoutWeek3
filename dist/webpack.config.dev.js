@@ -44,5 +44,9 @@ module.exports = {
       test: /\.pug$/,
       use: "pug-loader"
     }]
+  },
+  watch: true,
+  watchOptions: {
+    ignored: /node_modules/
   }
 };
