@@ -1,0 +1,135 @@
+extends ../layout/main.pug
+
+
+block content
+  .container--nav
+    ul.categoryNav.d-flex.justify-between.fw-black.text-uppercase
+      li.categoryNav__item.selected
+        a.categoryNav__link.d-flex.align-items-center.justify-center(href='products-op.html')
+          svg.product__icon.icon-secondary-color
+            use(xlink:href='.\src\icon\iconfinder_44_2529968.svg#diamond')
+          h3.categoryNav__title optical
+      li.categoryNav__item
+        a.categoryNav__link.d-flex.align-items-center.justify-center(href='products-sun.html')
+          svg.product__icon.icon-secondary-color
+            use(xlink:href='.\src\icon\Layer_1.svg#sun')
+          h3.categoryNav__title sunglasses
+      li.categoryNav__item
+        a.categoryNav__link.d-flex.align-items-center.justify-center(href='products-func.html')
+          svg.product__icon.icon-secondary-color
+            use(xlink:href='.\src\icon\Page-1.svg#thunder')
+          h3.categoryNav__title functional
+  .productCover.d-flex.justify-between
+    .productCover__left.productOptical
+    .productCover__right.productOptical
+  .productDisplay
+    .container
+      .productDisplay__title.text-center
+        h2.h2-small.fw-medium Celluloid Combi
+        h3.h3-small.fw-regular 賽璐珞鈦金屬混合鏡框
+      ul.productDisplay__list.text-uppercase.d-flex.flex-wrap
+        li.productDisplay__item
+          img.productDisplay__cover(src='./src/img/optical-1.jpg' alt='')
+          .productDisplay__info
+            h3.fw-regular bj41600s
+            h3.fw-medium.text-primary ntd3,490
+          ul.d-flex
+            li.productDisplay__color.bg-option-chocolate
+            li.productDisplay__color.bg-option-brown
+        li.productDisplay__item
+          img.productDisplay__cover(src='./src/img/optical-2.jpg' alt='')
+          .productDisplay__info
+            h3.fw-regular bj41600s
+            h3.fw-medium.text-primary ntd3,490
+          ul.d-flex
+            li.productDisplay__color.bg-option-chocolate
+            li.productDisplay__color.bg-option-brown
+        li.productDisplay__item
+          img.productDisplay__cover(src='./src/img/optical-3.jpg' alt='')
+          .productDisplay__info
+            h3.fw-regular bj41600s
+            h3.fw-medium.text-primary ntd3,490
+          ul.d-flex
+            li.productDisplay__color.bg-option-chocolate
+            li.productDisplay__color.bg-option-brown
+        li.productDisplay__item
+          img.productDisplay__cover(src='./src/img/optical-4.jpg' alt='')
+          .productDisplay__info
+            h3.fw-regular bj41600s
+            h3.fw-medium.text-primary ntd3,490
+          ul.d-flex
+            li.productDisplay__color.bg-option-chocolate
+            li.productDisplay__color.bg-option-brown
+        li.productDisplay__item
+          img.productDisplay__cover(src='./src/img/optical-5.jpg' alt='')
+          .productDisplay__info
+            h3.fw-regular bj41600s
+            h3.fw-medium.text-primary ntd3,490
+          ul.d-flex
+            li.productDisplay__color.bg-option-chocolate
+            li.productDisplay__color.bg-option-brown
+        li.productDisplay__item
+          img.productDisplay__cover(src='./src/img/optical-6.jpg' alt='')
+          .productDisplay__info
+            h3.fw-regular bj41600s
+            h3.fw-medium.text-primary ntd3,490
+          ul.d-flex
+            li.productDisplay__color.bg-option-chocolate
+            li.productDisplay__color.bg-option-brown
+        li.productDisplay__item
+          img.productDisplay__cover(src='./src/img/optical-1.jpg' alt='')
+          .productDisplay__info
+            h3.fw-regular bj41600s
+            h3.fw-medium.text-primary ntd3,490
+          ul.d-flex
+            li.productDisplay__color.bg-option-chocolate
+            li.productDisplay__color.bg-option-brown
+        li.productDisplay__item
+          img.productDisplay__cover(src='./src/img/optical-2.jpg' alt='')
+          .productDisplay__info
+            h3.fw-regular bj41600s
+            h3.fw-medium.text-primary ntd3,490
+          ul.d-flex
+            li.productDisplay__color.bg-option-chocolate
+            li.productDisplay__color.bg-option-brown
+        li.productDisplay__item
+          img.productDisplay__cover(src='./src/img/optical-3.jpg' alt='')
+          .productDisplay__info
+            h3.fw-regular bj41600s
+            h3.fw-medium.text-primary ntd3,490
+          ul.d-flex
+            li.productDisplay__color.bg-option-chocolate
+            li.productDisplay__color.bg-option-brown
+        li.productDisplay__item
+          img.productDisplay__cover(src='./src/img/optical-4.jpg' alt='')
+          .productDisplay__info
+            h3.fw-regular bj41600s
+            h3.fw-medium.text-primary ntd3,490
+          ul.d-flex
+            li.productDisplay__color.bg-option-chocolate
+            li.productDisplay__color.bg-option-brown
+        li.productDisplay__item
+          img.productDisplay__cover(src='./src/img/optical-5.jpg' alt='')
+          .productDisplay__info
+            h3.fw-regular bj41600s
+            h3.fw-medium.text-primary ntd3,490
+          ul.d-flex
+            li.productDisplay__color.bg-option-chocolate
+            li.productDisplay__color.bg-option-brown
+        li.productDisplay__item
+          img.productDisplay__cover(src='./src/img/optical-6.jpg' alt='')
+          .productDisplay__info
+            h3.fw-regular bj41600s
+            h3.fw-medium.text-primary ntd3,490
+          ul.d-flex
+            li.productDisplay__color.bg-option-chocolate
+            li.productDisplay__color.bg-option-brown
+      ul.pagination.d-flex
+        li.pagination__item 上一頁
+        li.pagination__item 1
+        li.pagination__item.selected 2
+        li.pagination__item 3
+        li.pagination__item 4
+        li.pagination__item 5
+        li.pagination__item 下一頁
+    
