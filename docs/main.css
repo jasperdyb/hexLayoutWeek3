@@ -122,14 +122,12 @@ q {
   quotes: none;
 }
 
-blockquote:before,
-blockquote:after {
+blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-q:before,
-q:after {
+q:before, q:after {
   content: "";
   content: none;
 }
@@ -146,8 +144,7 @@ a:visited {
 }
 
 body {
-  font-family: "Roboto", "Noto Sans TC", " -apple-system", "BlinkMacSystemFont",
-    "Segoe UI", "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Roboto", "Noto Sans TC", " -apple-system", "BlinkMacSystemFont", "Segoe UI", "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif;
   line-height: 1.5;
 }
 
@@ -300,11 +297,11 @@ textarea {
 
 /* These elements are usually rendered a certain way by the browser */
 button,
-input[type="reset"],
-input[type="button"],
-input[type="submit"],
-input[type="checkbox"],
-input[type="radio"],
+input[type=reset],
+input[type=button],
+input[type=submit],
+input[type=checkbox],
+input[type=radio],
 select {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -320,7 +317,7 @@ select {
 /* Search Input
 -----------------------------------------------*/
 /* Make webkit render the search input like a normal text field */
-input[type="search"] {
+input[type=search] {
   -webkit-appearance: textfield;
   -webkit-box-sizing: content-box;
 }
@@ -333,9 +330,9 @@ input[type="search"] {
 /* Buttons
 -----------------------------------------------*/
 button,
-input[type="reset"],
-input[type="button"],
-input[type="submit"] {
+input[type=reset],
+input[type=button],
+input[type=submit] {
   /* Fix IE7 display bug */
   overflow: visible;
   width: auto;
@@ -400,8 +397,7 @@ select[multiple] {
   }
 }
 @media (max-width: 375px) {
-  .container,
-  .container--form {
+  .container, .container--form {
     max-width: 345px;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -426,7 +422,7 @@ select[multiple] {
 }
 
 .logo {
-  background-image: url(/src/img/logo.png);
+  background-image: url(./src/img/logo.png);
   width: 80px;
   height: 48px;
   background-size: contain;
@@ -472,7 +468,7 @@ select[multiple] {
   }
 }
 .cover {
-  background-image: url(/src/img/banner.png);
+  background-image: url(./src/img/banner.png);
   box-sizing: border-box;
   height: 840px;
   margin-bottom: 64px;
@@ -480,7 +476,7 @@ select[multiple] {
 
 @media (max-width: 768px) {
   .cover {
-    background-image: url(/src/img/banner-sm.png);
+    background-image: url(./src/img/banner-sm.png);
     margin-bottom: 40px;
   }
   .cover__container {
@@ -656,7 +652,7 @@ select[multiple] {
 .coBrand {
   width: 100%;
   height: 743px;
-  background-image: url(/src/img/bg.png);
+  background-image: url(./src/img/bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -753,9 +749,7 @@ select[multiple] {
     width: 330px;
     margin-bottom: 44px;
   }
-  .opinion .customer__portrait,
-  .opinion .customer__name,
-  .opinion .customer__opinion {
+  .opinion .customer__portrait, .opinion .customer__name, .opinion .customer__opinion {
     margin-bottom: 16px;
   }
 }
@@ -934,19 +928,18 @@ select[multiple] {
   margin-bottom: 88px;
 }
 .productCover__left.productOptical {
-  background-image: url(/src/img/banner-1.png);
+  background-image: url(./src/img/banner-1.png);
 }
 .productCover__left.productSun {
-  background-image: url(/src/img/banner-3.png);
+  background-image: url(./src/img/banner-3.png);
 }
 .productCover__right.productOptical {
-  background-image: url(/src/img/banner-2.png);
+  background-image: url(./src/img/banner-2.png);
 }
 .productCover__right.productSun {
-  background-image: url(/src/img/banner-4.png);
+  background-image: url(./src/img/banner-4.png);
 }
-.productCover__left,
-.productCover__right {
+.productCover__left, .productCover__right {
   height: 100%;
   width: 945px;
   max-width: 50%;
@@ -959,16 +952,16 @@ select[multiple] {
     margin-bottom: 40px;
   }
   .productCover__left.productOptical {
-    background-image: url(/src/img/banner-1-sm.jpg);
+    background-image: url(./src/img/banner-1-sm.jpg);
   }
   .productCover__left.productSun {
-    background-image: url(/src/img/banner-3-sm.png);
+    background-image: url(./src/img/banner-3-sm.png);
   }
   .productCover__right.productOptical {
-    background-image: url(/src/img/banner-2-sm.jpg);
+    background-image: url(./src/img/banner-2-sm.jpg);
   }
   .productCover__right.productSun {
-    background-image: url(/src/img/banner-4-sm.png);
+    background-image: url(./src/img/banner-4-sm.png);
   }
 }
 @media (max-width: 375px) {
@@ -996,47 +989,30 @@ select[multiple] {
   box-sizing: border-box;
   padding: 0 15px;
 }
-.productDisplay__item:first-child:nth-last-child(3n + 0),
-.productDisplay__item:first-child:nth-last-child(3n + 0)
-  ~ .productDisplay__item {
+.productDisplay__item:first-child:nth-last-child(3n+0), .productDisplay__item:first-child:nth-last-child(3n+0) ~ .productDisplay__item {
   width: 33.33333%;
   margin-bottom: 112px;
 }
-.productDisplay__item:first-child:nth-last-child(3n + 0) .productDisplay__info,
-.productDisplay__item:first-child:nth-last-child(3n + 0)
-  ~ .productDisplay__item
-  .productDisplay__info {
+.productDisplay__item:first-child:nth-last-child(3n+0) .productDisplay__info, .productDisplay__item:first-child:nth-last-child(3n+0) ~ .productDisplay__item .productDisplay__info {
   display: flex;
   flex-direction: column;
 }
-.productDisplay__item:first-child:nth-last-child(3n + 0) .productDisplay__cover,
-.productDisplay__item:first-child:nth-last-child(3n + 0)
-  ~ .productDisplay__item
-  .productDisplay__cover {
+.productDisplay__item:first-child:nth-last-child(3n+0) .productDisplay__cover, .productDisplay__item:first-child:nth-last-child(3n+0) ~ .productDisplay__item .productDisplay__cover {
   height: 224px;
 }
-.productDisplay__item:first-child:nth-last-child(4n + 0),
-.productDisplay__item:first-child:nth-last-child(4n + 0)
-  ~ .productDisplay__item {
+.productDisplay__item:first-child:nth-last-child(4n+0), .productDisplay__item:first-child:nth-last-child(4n+0) ~ .productDisplay__item {
   width: 25%;
   margin-bottom: 104px;
 }
-.productDisplay__item:first-child:nth-last-child(4n + 0) .productDisplay__info,
-.productDisplay__item:first-child:nth-last-child(4n + 0)
-  ~ .productDisplay__item
-  .productDisplay__info {
+.productDisplay__item:first-child:nth-last-child(4n+0) .productDisplay__info, .productDisplay__item:first-child:nth-last-child(4n+0) ~ .productDisplay__item .productDisplay__info {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.productDisplay__item:first-child:nth-last-child(4n + 0) .productDisplay__cover,
-.productDisplay__item:first-child:nth-last-child(4n + 0)
-  ~ .productDisplay__item
-  .productDisplay__cover {
+.productDisplay__item:first-child:nth-last-child(4n+0) .productDisplay__cover, .productDisplay__item:first-child:nth-last-child(4n+0) ~ .productDisplay__item .productDisplay__cover {
   height: 164px;
 }
-.productDisplay__item:nth-last-child(4),
-.productDisplay__item:nth-last-child(4) ~ .productDisplay__item {
+.productDisplay__item:nth-last-child(4), .productDisplay__item:nth-last-child(4) ~ .productDisplay__item {
   margin-bottom: 0 !important;
 }
 .productDisplay__cover {
@@ -1068,8 +1044,7 @@ select[multiple] {
     flex-direction: row !important;
     justify-content: space-between !important;
   }
-  .productDisplay__item:nth-last-child(4),
-  .productDisplay__item:nth-last-child(4) ~ .productDisplay__item {
+  .productDisplay__item:nth-last-child(4), .productDisplay__item:nth-last-child(4) ~ .productDisplay__item {
     margin-bottom: 72px !important;
   }
 }
@@ -1093,8 +1068,7 @@ select[multiple] {
     width: 100% !important;
     margin-bottom: 32px !important;
   }
-  .productDisplay__item:nth-last-child(4),
-  .productDisplay__item:nth-last-child(4) ~ .productDisplay__item {
+  .productDisplay__item:nth-last-child(4), .productDisplay__item:nth-last-child(4) ~ .productDisplay__item {
     margin-bottom: 32px !important;
   }
 }
