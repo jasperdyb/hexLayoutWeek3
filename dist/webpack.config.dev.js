@@ -1,7 +1,8 @@
 "use strict";
 
-//webpack.config.js
 var path = require("path");
+
+var HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: "./main.js",
@@ -9,6 +10,7 @@ module.exports = {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist")
   },
+  plugins: [new HtmlWebpackPlugin()],
   module: {
     rules: [{
       test: /\.s[ac]ss$/i,
@@ -25,6 +27,9 @@ module.exports = {
           name: "img/[name].[ext]"
         }
       }]
+    }, {
+      test: /\.pug$/,
+      use: "pug-loader"
     }]
   }
 };

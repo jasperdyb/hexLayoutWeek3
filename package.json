@@ -4,14 +4,17 @@
   "description": "",
   "main": "webpack.config.js",
   "dependencies": {
+    "pug": "^3.0.0",
     "sass": "^1.29.0",
     "sass-loader": "^10.0.5",
-    "webpack-cli": "^4.2.0",
-    "webpack": "^5.4.0"
+    "webpack": "^5.4.0",
+    "webpack-cli": "^4.2.0"
   },
   "devDependencies": {
     "css-loader": "^5.0.1",
     "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.0.0-alpha.13",
+    "pug-loader": "^2.4.0",
     "style-loader": "^2.0.0",
     "url-loader": "^4.1.1"
   },

@@ -1,5 +1,5 @@
-//webpack.config.js
 const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: "./main.js",
@@ -7,6 +7,7 @@ module.exports = {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
   },
+  plugins: [new HtmlWebpackPlugin()],
   module: {
     rules: [
       {
@@ -31,6 +32,10 @@ module.exports = {
             },
           },
         ],
+      },
+      {
+        test: /\.pug$/,
+        use: "pug-loader",
       },
     ],
   },

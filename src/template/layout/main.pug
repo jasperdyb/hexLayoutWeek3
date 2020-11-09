@@ -1,0 +1,207 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Home
+    // <link rel="stylesheet" href="./css/main.css" />
+  body
+    .navbar.bg-primary.d-flex.flex-s-column.justify-between
+      a.logo(href='index.html')
+        h1 Glass
+      ul.navList.fw-regular.text-center.text-light.d-flex.flex-s-wrap.align-items-center
+        li.navList__item
+          a(href='products-op.html') 系列鏡框
+        li.navList__item
+          a(href='location.html') 門市據點
+        li.navList__item
+          a(href='blog.html') 部落格
+        li.navList__item
+          a(href='faq.html') 常見問題
+    .cover.text-secondary.text-right
+      .container.d-flex.flex-column.justify-center.h-100
+        h3.cover__subTitle.h3.fw-regular
+          | Promise-Desert 2020 早春系列
+        h1.h1.fw-bold 看得清，才能看得遠
+    .intro.bg-secondary-contrast.text-center
+      h2.intro__title.h2.fw-bold 用專業的心，做專業的事
+      ul.intro__list.container
+        li.intro__list__item.intro__list__item--order
+          svg.intro__icon.icon-secondary
+            use(xlink:href='./src/icon/iconfinder_circle-dollar_430089.svg#dollar')
+          h4.intro__subTitle.h4.fw-bold 單一價格
+          p.p.fw-regular.text-left.text-dark
+            | 無論任何度數皆不需追加費用 即可擁有適合自己的薄型球面 鏡片。
+        li.intro__list__item
+          svg.intro__icon.icon-secondary
+            use(xlink:href='./src/icon/iconfinder_clock-1_430090.svg#clock')
+          h4.intro__subTitle.h4.fw-bold 20 分鐘即可取件
+          p.p.fw-regular.text-left.text-dark
+            | 為了您的寶貴時間著想，以豐 富專業知識與技術將結帳到交
+            | 件的時間縮減至最快 20 分鐘 即可完成。
+        li.intro__list__item
+          svg.intro__icon.icon-secondary
+            use(xlink:href='.\src\icon\iconfinder_heart_430099.svg#heart')
+          h4.intro__subTitle.h4.fw-bold 安心售後服務
+          p.p.fw-regular.text-left.text-dark
+            | 我們提供長達 120
+            | 天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。
+        li.intro__list__item.intro__list__item--order
+          svg.intro__icon.icon-secondary
+            use(xlink:href='.\src\icon\iconfinder_glasses_430098 (1).svg#glasses')
+          h4.intro__subTitle.h4.fw-bold 關於鏡片
+          p.p.fw-regular.text-left.text-dark
+            | 使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。
+    .product
+      .container
+        h2.product__title.h2.fw-bold.text-center.text-secondary
+          | 經典系列鏡框
+        ul.product__list.text-italic.text-primary.text-s-light
+          li.product__list__item.d-flex.align-items-center
+            .product__list__cover
+              img(src='./src/img/product-1.png' alt='product-1')
+            a.product__list__link.d-flex.align-items-center.justify-m-center(href='products-op.html')
+              svg.product__icon.icon-primary.icon-s-light
+                use(xlink:href='.\src\icon\iconfinder_44_2529968.svg#diamond')
+              h2.product__list__title.h2.fw-black.text-uppercase
+                | optical
+          li.product__list__item.d-flex.align-items-center.flex-row-reverse.flex-m-row
+            .product__list__cover
+              img(src='./src/img/product-2.png' alt='product-2')
+            a.product__list__link.d-flex.align-items-center.justify-m-center(href='products-sun.html')
+              svg.product__icon.icon-primary.icon-s-light
+                use(xlink:href='.\src\icon\Layer_1.svg#sun')
+              h2.product__list__title.h2.h2-large.fw-black.text-uppercase
+                | sunglasses
+          li.product__list__item.d-flex.align-items-center
+            .product__list__cover
+              img(src='./src/img/product-3.png' alt='product-3')
+            a.product__list__link.d-flex.align-items-center.justify-m-center(href='product-func.html')
+              svg.product__icon.icon-primary.icon-s-light
+                use(xlink:href='.\src\icon\Page-1.svg#thunder')
+              h2.product__list__title.h2.h2-large.fw-black.text-uppercase
+                | functional
+    .coBrand
+      h2.coBrand__title.h2.fw-bold.text-light.text-center
+        | 聯名設計鏡框
+      .container.h1-large.d-flex.flex-s-column.justify-between
+        .coBrand__brand
+          img.coBrand__brand__cover(src='./src/img/product-8.png' alt='product-8')
+          h2.coBrand__brand__name.fw-bold.text-primary.text-center.w-100
+            | Double A+
+        .coBrand__brand
+          img.coBrand__brand__cover(src='./src/img/product-9.png' alt='product-9')
+          h2.coBrand__brand__name.fw-bold.text-primary.text-center.w-100
+            | YOUTH
+    .opinion
+      .container
+        h2.opinion__title.h2.fw-bold.text-center.text-secondary
+          | 顧客推薦
+        ul.opinion__list.d-flex.justify-between.regular.flex-m-wrap
+          li.customer
+            .customer__portrait
+              img(src='./src/img/rec-1.png' alt='')
+            h6.customer__name.h6.fw-medium Jessy
+            p.customer__opinion.p
+              | This is a wider card with supporting text below as a natural
+              | lead-in to additional content. This content is a little bit
+              | longer.
+            h6.customer__published.h6.text-grey
+              | Last updated 3 mins ago
+          li.customer
+            .customer__portrait
+              img(src='./src/img/rec-2.png' alt='')
+            h6.customer__name.h6.fw-medium Karen
+            p.customer__opinion.p
+              | This is a wider card with supporting text below as a natural
+              | lead-in to additional content. This content is a little bit
+              | longer.
+            h6.customer__published.h6.text-grey
+              | Last updated 3 mins ago
+          li.customer
+            .customer__portrait
+              img(src='./src/img/rec-3.png' alt='')
+            h6.customer__name.h6.medium Chelsea
+            p.customer__opinion.p
+              | This is a wider card with supporting text below as a natural
+              | lead-in to additional content. This content is a little bit
+              | longer.
+            h6.customer__published.h6.text-grey
+              | Last updated 3 mins ago
+          li.customer
+            .customer__portrait
+              img(src='./src/img/rec-4.png' alt='')
+            h6.customer__name.h6 Jane
+            p.customer__opinion.p
+              | This is a wider card with supporting text below as a natural
+              | lead-in to additional content. This content is a little bit
+              | longer.
+            h6.customer__published.h6.text-grey
+              | Last updated 3 mins ago
+    .contact.container--form.bg-secondary-contrast.fw-bold
+      h2.contact__title.h2.text-center 聯絡我們
+      h3.contact__subtitle.h4-small.fw-regular
+        | 我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。
+      form.contact__form.h5.fw-regular(action='#')
+        .form-group
+          label(for='contactName ') 姓名
+          input#contactName.form-control(type='text' placeholder='陳小明')
+        .form-group
+          label(for='contactPhone') 聯絡電話
+          input#contactPhone.form-control(type='tel' placeholder='0912-345-678')
+        .form-group
+          label(for='contactEmail') 電子郵件
+          input#contactEmail.form-control(type='email' placeholder='example@email.com')
+        .form-group
+          label(for='contactOpinion') 意見反應
+          textarea#contactOpinion.form-control(placeholder='請輸入您的意見' rows='4')
+        .form-check.contact__privacy
+          input#contactPrivacy.form-check-input(type='checkbox')
+          label.form-check-label(for='contactPrivacy') 我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。
+        button.contact__button.bg-primary.text-light.h5(type='submit')
+          | 確認送出
+    .footer.bg-primary.text-light.fw-regular
+      .container
+        .footer__top.d-flex.justify-between
+          .footer__left
+            ul.footer__nav.d-flex.h5
+              li 首頁
+              li 系列鏡框
+              li 門市據點
+              li 部落格
+              li 常見問題
+            ul.footer__contact.h3
+              li.d-flex.align-items-center
+                svg.footer__contact__icon.icon-light
+                  use(xlink:href='.\src\icon\ic_phone_48px.svg#phone')
+                a(href='tel:+') 0800-000-000
+              li.d-flex.align-items-center
+                svg.footer__contact__icon.icon-light
+                  use(xlink:href='.\src\icon\ic_mail_outline_24px.svg#mail')
+                a(href='mailto:') glasses@business.com
+          .footer__right
+            ul.footer__social.d-flex
+              li
+                a(href='#')
+                  svg.footer__social__icon.icon-light.rounded-circle
+                    use(xlink:href='.\src\icon\logo-facebook.svg#facebook')
+              li
+                a(href='#')
+                  svg.footer__social__icon.icon-light
+                    use(xlink:href='.\src\icon\logo-instagram.svg#instagram')
+              li
+                a(href='#')
+                  svg.footer__social__icon.icon-light
+                    use(xlink:href='.\src\icon\line.svg#line')
+        .footer__bottom.d-flex.flex-s-row-reverse.align-items-s-end
+          div
+            img.footer__logo(src='./src/img/logo.png' alt='')
+          .footer__policy.d-flex.justify-between.align-items-center.flex-fill.flex-s-column.align-items-s-start
+            .footer__copyright.h5
+              | Copyright © 2020 Glasses.All rights reserved.
+            ul.footer__policy__list.d-flex.h6.flex-s-column.align-items-s-start
+              li
+                a(href='#') 隱私權政策
+              li
+                a(href='#') 服務條款
+    script(src='./dist/bundle.js')
