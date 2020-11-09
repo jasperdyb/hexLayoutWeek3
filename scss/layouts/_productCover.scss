@@ -1,29 +1,22 @@
-$srcImgPath: "../../src/img";
-$srcGithubImgPath: "../src/img";
-
 .productCover {
   height: 309px;
 
   &__left {
     &.productOptical {
-      background-image: url("#{$srcImgPath}/banner-1.png"),
-        url("#{$srcGithubImgPath}/banner-1.png");
+      background-image: url("#{$srcImgPath}/banner-1.png");
     }
 
     &.productSun {
-      background-image: url("#{$srcImgPath}/banner-3.png"),
-        url("#{$srcGithubImgPath}/banner-3.png");
+      background-image: url("#{$srcImgPath}/banner-3.png");
     }
   }
 
   &__right {
     &.productOptical {
-      background-image: url("#{$srcImgPath}/banner-2.png"),
-        url("#{$srcGithubImgPath}/banner-2.png");
+      background-image: url("#{$srcImgPath}/banner-2.png");
     }
     &.productSun {
-      background-image: url("#{$srcImgPath}/banner-4.png"),
-        url("#{$srcGithubImgPath}/banner-4.png");
+      background-image: url("#{$srcImgPath}/banner-4.png");
     }
   }
 
@@ -43,25 +36,21 @@ $srcGithubImgPath: "../src/img";
     margin-bottom: 40px;
     &__left {
       &.productOptical {
-        background-image: url("#{$srcImgPath}/banner-1-sm.jpg"),
-          url("#{$srcGithubImgPath}/banner-1-sm.png");
+        background-image: url("#{$srcImgPath}/banner-1-sm.jpg");
       }
 
       &.productSun {
-        background-image: url("#{$srcImgPath}/banner-3-sm.png"),
-          url("#{$srcGithubImgPath}/banner-3-sm.png");
+        background-image: url("#{$srcImgPath}/banner-3-sm.png");
       }
     }
 
     &__right {
       &.productOptical {
-        background-image: url("#{$srcImgPath}/banner-2-sm.jpg"),
-          url("#{$srcGithubImgPath}/banner-2-sm.png");
+        background-image: url("#{$srcImgPath}/banner-2-sm.jpg");
       }
 
       &.productSun {
-        background-image: url("#{$srcImgPath}/banner-4-sm.png"),
-          url("#{$srcGithubImgPath}/banner-4-sm.png");
+        background-image: url("#{$srcImgPath}/banner-4-sm.png");
       }
     }
   }
