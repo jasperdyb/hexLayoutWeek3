@@ -5,20 +5,22 @@ var path = require("path");
 var HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: "./main.js",
+  entry: "./scss/main.scss",
   output: {
-    filename: "bundle.js",
+    filename: "main.css",
     path: path.resolve(__dirname, "dist")
   },
   plugins: [new HtmlWebpackPlugin({
-    title: "Home"
+    title: "Home",
+    filename: "index.html",
+    template: "src/template/page/home.pug"
   }), new HtmlWebpackPlugin({
     title: "Product",
-    filename: "product-op.html",
+    filename: "products-op.html",
     template: "src/template/page/product-op.pug"
   }), new HtmlWebpackPlugin({
     title: "Product",
-    filename: "product-sun.html",
+    filename: "products-sun.html",
     template: "src/template/page/product-sun.pug"
   })],
   module: {

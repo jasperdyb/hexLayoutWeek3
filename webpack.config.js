@@ -8,15 +8,19 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
   },
   plugins: [
-    new HtmlWebpackPlugin({ title: "Home" }),
+    new HtmlWebpackPlugin({
+      title: "Home",
+      filename: "index.html",
+      template: "src/template/page/home.pug",
+    }),
     new HtmlWebpackPlugin({
       title: "Product",
-      filename: "product-op.html",
+      filename: "products-op.html",
       template: "src/template/page/product-op.pug",
     }),
     new HtmlWebpackPlugin({
       title: "Product",
-      filename: "product-sun.html",
+      filename: "products-sun.html",
       template: "src/template/page/product-sun.pug",
     }),
   ],
